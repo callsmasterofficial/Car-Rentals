@@ -94,11 +94,11 @@ function SearchArea({ location }) {
             <div
               className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700]  border-style Calender-Time-Style "
             >
-              <input
+              {/* <input
                 type="text"
                 className="form-control  pl-8  w-[100%] SearchArea"
                 placeholder="Pick-up Date"
-              ></input>
+              ></input> */}
               <div className="relative ">
               <DatePicker
                 className="pl-8 SearchArea pt-4"
