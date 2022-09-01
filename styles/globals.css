@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html,
 body {
   padding: 0;
@@ -23,4 +26,364 @@ a {
     color: white;
     background: black;
   }
+}
+
+.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1550613097-fe6c2c321cd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  /* width: 100vw; */
+  /* overflow: hidden; */
+}
+
+.Available-image{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("https://taxiservice247.com/images/bg1.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 60vh;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 350px) {
+  .Brands-outer {
+    /* display: grid; */
+    grid-column: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 255px;
+  }
+
+  .brand-inner {
+    display: grid;
+    margin: 0 auto;
+    
+  }
+
+  .brand-inner img {
+    margin: 4px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+}
+@media only screen and (min-width: 350px) {
+  
+  .brand-inner img {
+    margin: 4px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+}
+
+
+@media only screen and (min-width: 350px) and (max-width: 410px) {
+  .Brands-outer {
+    margin-top: 210px;
+  }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 640px) {
+  .Brands-outer {
+    margin-top: 165px;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 640px) {
+  .brand-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1024px) {
+  .cards-area {
+    grid: none;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 640px) {
+  .cardsArea-container {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 800px) {
+  .topWorldArea {
+    grid: none;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 640px) {
+  .topWorldArea-Justify {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+  .topWorldArea-Justify2 {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1024px) {
+  .frequentlyAccordian {
+    grid: none;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1024px) {
+  .footer {
+    grid: none;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+  .footer-company {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  .Calender-Time {
+    display: flex;
+  }
+  .Calender-Time-Style {
+    width: 100%;
+  }
+}
+
+/* @media only screen and (min-width: 1000px) {
+ 
+  .Calender-Time {
+    display: flex;
+  }
+
+  .border-style {
+    border-top: 16px;
+    border-style: solid;
+    border-color: #eab308;
+  }
+} */
+
+@media only screen and (min-width: 280px) and (max-width: 1000px) {
+  .Background-style {
+    background-color: #1879ca;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1000px) {
+  .mobile-pdding {
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  .mobile-pdding-Search {
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 280px) and (max-width: 320px) {
+  .mobile-border {
+    border-width: 8px;
+    border-color: #ffb700;
+  }
+}
+@media only screen and (min-width: 280px) and (max-width: 320px) {
+  .mobile-border-left-right {
+    border-bottom-width:8px;
+border-left-width:8px;
+border-right-width:8px;
+    border-color: #ffb700;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 450px) {
+  .driver-age-mobile {
+    display: block;
+  }
+}
+
+.SearchArea {
+  height: 46px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .header-icon {
+    margin-top: 10px;
+  }
+}
+
+/* @media only screen and (min-width: 1000px) {
+  .header-heading {
+    margin-top: 25px;
+  }
+} */
+@media only screen and (min-width: 1000px) {
+  .header-checkbox {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1000px) {
+  .Search-Area-Border-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1000px) {
+  .Search-Area-Border-bottom {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+/* @media only screen and (min-width: 1000px) {
+  .Search-Area-Border-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+} */
+
+/* @media only screen and (min-width: 1000px) {
+  .Search-Area-Border-right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+} */
+
+@media only screen and (min-width: 280px) and (max-width: 640px) {
+  .Header-Hamburger {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 350px) {
+  .mobile-modal-language{
+    grid:none ;
+  }
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 640px) {
+  .manage-booking-mobile{
+    flex-direction: column;
+  }
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 640px) {
+  .Cookies-mobile{
+    width: 100%;
+  }
+}
+
+.select-option{
+  width: 100%;
+
+}
+@media only screen and (min-width: 280px) and (max-width: 639px) {
+  .next-trip-mobile
+  {
+    display: block;
+  }
+}
+
+.carImgBox{
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.carImgBox:hover>.h1div{
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-14px);
+}
+
+@media only screen and (min-width: 280px) and (max-width: 639px) {
+  .AvailableArea-Heading-mobile
+  {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 2px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 639px) {
+  .AvailableArea-SubHeading-mobile 
+  {
+    font-size: 16px;
+    margin-top: 2px;
+
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+  .AvailableArea-image-mobile 
+  {
+   
+    height: 75vh;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 850px) {
+  .AvailableArea-image-mobile 
+  {
+   
+    height: 75vh;
+  }
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 640px) {
+  .appBtn 
+  {
+   
+margin-top: 4px;  }
+}
+
+
+
+.driverCheckBox{
+  display: none;
+}
+
+@media only screen and (min-width: 1025px)  {
+.driverCheckBox{
+ display: flex;
+}
+}
+
+@media only screen and (min-width: 280px) and (max-width:370px)  {
+  .Availaible-mobile-buttons{
+   display: block;
+   text-align: center;
+   
+  }
+  }
+
+  @media only screen and (min-width: 280px) and (max-width:370px)  {
+    .Availaible-mobile-button2{
+     margin-left: 0px;
+     margin-top: 4px;
+     
+    }
+    }
+
+
+.react-datepicker__input-container>input{
+  width: 100% ;
+  outline:none;
 }
