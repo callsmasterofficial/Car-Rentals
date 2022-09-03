@@ -1,6 +1,6 @@
 import React from "react";
 
-function ManageBooking() {
+function ManageBooking({setModal}) {
   return (
     <div className="flex items-center justify-center my-4 manage-booking-mobile manageBooking">
       <div className="flex-1">
