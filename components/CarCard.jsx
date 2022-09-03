@@ -17,7 +17,7 @@ function CarCard() {
 
 
       {car === "smallCar" && (
-        <div className="flex justify-around	">
+        <div className="flex justify-around	carCard">
           {carData.slice(0, 4).map((item,index) => (
             <CarCardArea
             key={`CarCard${index}`}
@@ -31,7 +31,7 @@ function CarCard() {
       )}
 
       {car === "middleClass" && (
-        <div className="flex justify-around	">
+        <div className="flex justify-around	carCard">
           {carData.slice(4, 8).map((item,index) => (
             <CarCardArea
             key={`CarCard${index}`}
@@ -45,7 +45,7 @@ function CarCard() {
       )}
 
       {car === "peopleCarrier" && (
-        <div className="flex justify-around	">
+        <div className="flex justify-around	carCard">
           {carData.slice(8, 12).map((item,index) => (
             <CarCardArea
             key={`CarCard1${index}`}
@@ -59,7 +59,7 @@ function CarCard() {
       )}
 
       {car === "combination" && (
-        <div className="flex justify-around	">
+        <div className="flex justify-around	carCard">
           {carData.slice(12, 16).map((item,index) => (
             <CarCardArea
             key={`CarCard1${index}`}
@@ -73,7 +73,7 @@ function CarCard() {
       )}
 
       {car === "luxury" && (
-        <div className="flex justify-around	">
+        <div className="flex justify-around	carCard">
           {carData.slice(16, 20).map((item,index) => (
             <CarCardArea
             key={`CarCard1${index}`}
@@ -87,7 +87,7 @@ function CarCard() {
       )}
 
       {car === "suv" && (
-        <div className="flex justify-around	">
+        <div className="flex justify-around	carCard">
           {carData.slice(20, 24).map((item,index) => (
             <CarCardArea
             key={`CarCard1${index}`}
@@ -101,7 +101,7 @@ function CarCard() {
       )}
 
       {car === "convertible" && (
-        <div className="flex justify-around	">
+        <div className="flex justify-around	carCard">
           {carData.slice(24, 28).map((item,index) => (
             <CarCardArea
             key={`CarCard1${index}`}
