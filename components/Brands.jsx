@@ -2,7 +2,6 @@ import React from "react";
 
 function Brands() {
   return (
-    // sm:mt-[170px] md:mt-[170px] lg:mt-3
     
     <div className="Brands-outer mt-12 w-[90%] mx-auto lg:w-[80%]  BrandsArea    ">
       

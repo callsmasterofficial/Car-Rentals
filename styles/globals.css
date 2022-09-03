@@ -31,7 +31,7 @@ a {
 
 .header-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://images.unsplash.com/photo-1550613097-fe6c2c321cd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+    url("../public/Images/Great-Ocean-Road-Victoria-Australia.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -344,7 +344,7 @@ input:checked ~ .dot {
   .AvailableArea-image-mobile 
   {
    
-    height: 75vh;
+    height: 80vh;
   }
 }
 
@@ -415,6 +415,14 @@ margin-top: 4px;  }
      
     }
     }
+
+  @media only screen and (min-width: 280px) and (max-width:300px)  {
+      .AvailableArea-image-mobile{
+       width: 100%;
+       
+      }
+  }
+  
 
 
 @media only screen and (min-width: 1706px) and (max-width:1920px)  {
