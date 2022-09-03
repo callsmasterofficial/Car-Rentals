@@ -37,7 +37,7 @@ function CardsArea() {
         Clean cars. Flexible bookings. Socially distant rental counters.
         </h1>
         <div className=" sm:my-2 my-1">
-        <input type="text" className="form-control border border-gray-500 rounded-sm sm:p-2 mt-2" placeholder="Email address"></input>
+        <input type="text" className="form-control border border-gray-500 rounded-sm sm:p-2 mt-2 p-2 w-[180px]" placeholder="Email address"></input>
        <button type="submit" className="btn btn-primary text-white bg-green-700 border rounded-md hover:bg-green-800 ml-8 p-2 mt-2 cursor-pointer	">Sign me up!</button>
         </div>
        </div>

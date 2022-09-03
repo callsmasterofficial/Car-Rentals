@@ -20,20 +20,20 @@ function CarCardArea({image, person, smallBag, largeBag }) {
                 <span className="text-[12px] ml-1">or similar</span>
               </div>
               <div>
-                <div className="flex pr-5 pl-12 pb-2">
+                <div className="flex pr-5 pl-12 pb-2 cardsArea">
                   <Person />
-                  <p className="ml-1">{person}</p>
+                  <p className="ml-1 ">{person}</p>
                 </div>
-               { largeBag.length !== 0 &&  <div className="flex pr-5 pl-12 pb-2">
+               { largeBag.length !== 0 &&  <div className="flex pr-5 pl-12 pb-2 cardsArea">
                   <LargeBag />
-                  <p className="ml-1"> {largeBag}</p>
+                  <p className="ml-1 "> {largeBag}</p>
                 </div>
                 }
 
                 {smallBag.length !==0  && (
-                <div className="flex pr-5 pl-12 pb-2">
+                <div className="flex pr-5 pl-12 pb-2 cardsArea">
                   <SmallBag />
-                  <p className="ml-1">{smallBag}</p>
+                  <p className="ml-1 cardsArea">{smallBag}</p>
                 </div>
                 )}
               </div>
