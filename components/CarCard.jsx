@@ -6,7 +6,7 @@ function CarCard() {
   const [car, setCar] = useState("smallCar");
   const carData = CarCardData;
   return (
-    <div className="w-[90%] mx-auto lg:w-[80%] mt-6">
+    <div className="w-[90%] mx-auto lg:w-[80%] mt-12 carCardsArea">
       <CarCardNavbar car={car} setCar={setCar} />
       {/* lg:flex lg:items-center lg:justify-around	 overflow-x-scroll lg:overflow-hidden 
          flex items-center justify-around	
@@ -18,8 +18,9 @@ function CarCard() {
 
       {car === "smallCar" && (
         <div className="flex justify-around	">
-          {carData.slice(0, 4).map((item) => (
+          {carData.slice(0, 4).map((item,index) => (
             <CarCardArea
+            key={`CarCard${index}`}
               image={item.image}
               person={item.person}
               smallBag={item.smallBag}
@@ -31,8 +32,9 @@ function CarCard() {
 
       {car === "middleClass" && (
         <div className="flex justify-around	">
-          {carData.slice(4, 8).map((item) => (
+          {carData.slice(4, 8).map((item,index) => (
             <CarCardArea
+            key={`CarCard${index}`}
               image={item.image}
               person={item.person}
               smallBag={item.smallBag}
@@ -44,8 +46,9 @@ function CarCard() {
 
       {car === "peopleCarrier" && (
         <div className="flex justify-around	">
-          {carData.slice(8, 12).map((item) => (
+          {carData.slice(8, 12).map((item,index) => (
             <CarCardArea
+            key={`CarCard1${index}`}
               image={item.image}
               person={item.person}
               smallBag={item.smallBag}
@@ -57,8 +60,9 @@ function CarCard() {
 
       {car === "combination" && (
         <div className="flex justify-around	">
-          {carData.slice(12, 16).map((item) => (
+          {carData.slice(12, 16).map((item,index) => (
             <CarCardArea
+            key={`CarCard1${index}`}
               image={item.image}
               person={item.person}
               smallBag={item.smallBag}
@@ -70,8 +74,9 @@ function CarCard() {
 
       {car === "luxury" && (
         <div className="flex justify-around	">
-          {carData.slice(16, 20).map((item) => (
+          {carData.slice(16, 20).map((item,index) => (
             <CarCardArea
+            key={`CarCard1${index}`}
               image={item.image}
               person={item.person}
               smallBag={item.smallBag}
@@ -83,8 +88,9 @@ function CarCard() {
 
       {car === "suv" && (
         <div className="flex justify-around	">
-          {carData.slice(20, 24).map((item) => (
+          {carData.slice(20, 24).map((item,index) => (
             <CarCardArea
+            key={`CarCard1${index}`}
               image={item.image}
               person={item.person}
               smallBag={item.smallBag}
@@ -96,8 +102,9 @@ function CarCard() {
 
       {car === "convertible" && (
         <div className="flex justify-around	">
-          {carData.slice(24, 28).map((item) => (
+          {carData.slice(24, 28).map((item,index) => (
             <CarCardArea
+            key={`CarCard1${index}`}
               image={item.image}
               person={item.person}
               smallBag={item.smallBag}

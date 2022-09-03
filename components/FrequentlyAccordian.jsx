@@ -93,23 +93,24 @@ function FrequentlyAccordian() {
   ];
 
   return (
-    <div className="grid grid-cols-4 mb-5 frequentlyAccordian w-[90%] mx-auto lg:w-[80%] mt-6">
+    <div className="grid grid-cols-4 mb-5 frequentlyAccordian w-[90%] mx-auto lg:w-[80%] mt-12 FrequentlyAccordian">
       <div className="col-span-2 mt-5 border border-gray-600 rounded-lg mb-auto lg:mr-6">
         <div className="m-3">
         <h1 className="font-bold p-3 divide-y">Frequently Asked Questions</h1>
-        <div className="accordion  divide-y ">
-          {accordionData.map(({ title, content }) => (
-            <Accordion title={title} content={content} />
+        <div className="accordion  divide-y hover:cursor-pointer">
+          {accordionData.map(({ title, content ,index}) => (
+            <Accordion title={title} content={content} 
+            key={`FrequentlyAccordian${index}`}/>
           ))}
         </div>
       </div>
       </div>
       <div className="col-span-2 mt-5 mb-auto border border-gray-600 rounded-lg lg:ml-6">
       <div className="m-3">
-      <h1 className="font-bold m-4 divide-y">Additional Information</h1>
-        <div className="accordion m-4 divide-y">
-          {accordionData2.map(({ title, item1, item2, item3,item4,item5,item6,item7,item8,item9,item10 }) => (
-            <Accordion2 title={title} item1={item1} item2={item2} item3={item3} item4={item4} item5={item5} item6={item6} item7={item7} item8={item8} item9={item9} item10={item10}/>
+      <h1 className="font-bold m-4 divide-y p-3">Additional Information</h1>
+        <div className="accordion  divide-y hover:cursor-pointer">
+          {accordionData2.map(({ title, item1, item2, item3,item4,item5,item6,item7,item8,item9,item10 ,index}) => (
+            <Accordion2 title={title} item1={item1} item2={item2} item3={item3} item4={item4} item5={item5} item6={item6} item7={item7} item8={item8} item9={item9} item10={item10} key={`FrequentlyAccordian2${index}`} />
           ))}
         </div>
         </div>

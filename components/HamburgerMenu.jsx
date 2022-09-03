@@ -25,7 +25,7 @@ function HamburgerMenu({modal, setModal}) {
         <img
           className="rounded-full h-[24px] w-[24px] "
           src="https://cf.bstatic.com/static/img/flags/new/48-squared/gb.png"
-        ></img>
+        />
         <div className="ml-1" onClick={() => setModal("mobileLanguage")}>English (AU)</div>
       </div>
 

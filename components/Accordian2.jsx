@@ -11,7 +11,7 @@ const Accordion2 = ({ title, item1, item2, item3,item4,item5,item6,item7,item8,i
         <div className="text-lg">{title}</div>
         <div>{isActive ?  <UpArrow/> : <DownArrow/>}</div>
       </div>
-      {isActive && <div className="accordion-content grid grid-cols-4">
+      {isActive && <div className="accordion-content grid grid-cols-4 pt-3">
         <a className=''>
             {item1}
         </a>

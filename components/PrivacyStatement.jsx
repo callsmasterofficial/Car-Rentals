@@ -9,9 +9,9 @@ function PrivacyStatement() {
           <div className="col-span-2 mt-5  mb-auto lg:mr-6">
             <div className="m-3">
             <h1 className="font-bold p-3 divide-y">Frequently Asked Questions</h1>
-            <div className="accordion  divide-y border rounded">
-              {accordionData.map(({ title, content }) => (
-                <Accordion title={title} content={content} />
+            <div className="accordion  divide-y border rounded hover:cursor-pointer">
+              {accordionData.map(({ title, content ,ind}) => (
+                <Accordion title={title} content={content} key={`PrivacyStatement${ind}`} />
               ))}
             </div>
           </div>

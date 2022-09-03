@@ -46,7 +46,7 @@ export default function Carousel() {
   // console.log(buttonRef);
   return (
     <>
-    <div className="mt-8 w-[90%] mx-auto lg:w-[80%]">
+    <div className="mt-12 w-[90%] mx-auto lg:w-[80%] CrouselArea">
 
       <div className="Crousal-heading flex justify-between">
         <h2 className="text-center text-lg font-bold my-3">Recommended Next Trip </h2>
@@ -65,8 +65,10 @@ export default function Carousel() {
       </div>
       <div className="slider1 overflow-x-hidden	overflow-y-hidden">
       <Slider {...options} ref={buttonRef}> 
-      {Data.map((tripData)=>(
-        <NextTripArea imgsrc={tripData.imgSrc} imgText={tripData.imgText}/>
+      {Data.map((tripData,index)=>(
+        <NextTripArea            
+         key={`Crousel${index}`}        
+        imgsrc={tripData.imgSrc} imgText={tripData.imgText}/>
       )) }
       </Slider>
       </div>

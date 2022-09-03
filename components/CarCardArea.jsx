@@ -13,7 +13,7 @@ function CarCardArea({image, person, smallBag, largeBag }) {
                 <img
                   className="mx-auto"
                   src={image}
-                ></img>
+                />
               </div>
               <div className="text-center text-lg font-bold">
                 Car Heading

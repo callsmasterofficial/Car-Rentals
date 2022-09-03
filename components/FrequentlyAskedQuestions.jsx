@@ -12,7 +12,7 @@ function FrequentlyAskedQuestions() {
       </p>
       <p className="my-1">Begin by selecting a help topic from the list</p>
       <div className="border-2 rounded  border-black  w-100%">
-        <select className="select-option p-2">
+        <select className="select-option p-2 hover:cursor-pointer">
           <option value="volvo">Most Popular</option>
           <option value="saab">Driver Requirements & Responsibilities</option>
           <option value="opel">Fuel, Mileage & Travel Plans</option>

@@ -4,28 +4,14 @@ import AccordianCookies from "./AccordianCookies";
 
 function Cookies({ modal, setModal }) {
   return (
-    <>
-      {/* <div className="absolute top-16 bg-white hidden sm:block shadow-sm shadow-gray-300    h-[65vh] w-[85vw]  left-24 right-24   rounded-md p-6 overflow-auto ">
-        <div className="p-2 border-b-2 border-gray-300 flex items-center justify-between">
-          <img
-            className="header-icon w-[120px] h-[40px] "
-            src="https://cdn.cookielaw.org/logos/static/ot_logo.png"
-          ></img>
-          <div
-            className="text-black h-6 w-6 hover:bg-gray-300 flex items-center justify-center rounded-sm cursor-pointer"
-            onClick={() => setModal("")}
-          >
-            <span>{"X"}</span>
-          </div>
-        </div> */}
-        
-        <div className="absolute  bg-white shadow-sm shadow-gray-300    h-[100vh] w-[60vw]  item-center  rounded-md p-6 overflow-auto Cookies-mobile ">
+    <>   
+        <div className="absolute  bg-white shadow-sm shadow-gray-300    h-[100vh] w-[50vw]  item-center  rounded-md p-6 overflow-auto Cookies-mobile ">
         <div className="flex justify-between	border-b-2">
         <div className="mobile-pdding">
           <img
             className="header-icon w-[120px] h-[40px] "
             src="https://cdn.cookielaw.org/logos/static/ot_logo.png"
-          ></img>
+          />
         </div>
         <div
             className="text-black h-6 w-6 hover:bg-gray-300 flex items-center justify-center rounded-sm cursor-pointer"
@@ -63,8 +49,8 @@ function Cookies({ modal, setModal }) {
               Frequently Asked Questions
             </h1>
             <div className="accordion  divide-y">
-              {accordionData.map(({ title, content }) => (
-                <AccordianCookies title={title} content={content} />
+              {accordionData.map(({ title, content,ind }) => (
+                <AccordianCookies title={title} content={content} key={`Cookies${ind}`}/>
               ))}
             </div>
           </div>
@@ -78,7 +64,7 @@ function Cookies({ modal, setModal }) {
           <img
             className="p-1 pl-5"
             src="https://cdn.cookielaw.org/logos/static/poweredBy_ot_logo.svg"
-          ></img>
+          />
         </div>
 
        </div> 

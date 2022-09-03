@@ -3,7 +3,7 @@ import React from "react";
 function Language({ modal, setModal }) {
   return (
     <>
-      <div className="absolute top-16 bg-white hidden sm:block    h-[65vh] w-[85vw]  left-24 right-24   rounded-md p-6 overflow-auto ">
+      <div className="absolute top-16 bg-white hidden sm:block    h-[65vh] w-[85vw]  left-24 right-24   rounded-md p-6 overflow-auto languageArea">
         {/* <div>
         <h1 className="font-bold border-b-2 py-4">Choose a Language</h1>
       </div> */}
@@ -19,9 +19,9 @@ function Language({ modal, setModal }) {
         </div>
 
         <div className=" grid grid-cols-4">
-          {languageData.map((data) => {
+          {languageData.map((data,index) => {
             return (
-              <div className="flex p-5 w-[100%] hover:bg-gray-200">
+              <div className="flex p-5 w-[100%] hover:bg-gray-200"  key={`Language${index}`}>
                 <div className="h-[24px] w-[24px] ">
                   <img className="rounded-full" src={data.image}></img>
                 </div>

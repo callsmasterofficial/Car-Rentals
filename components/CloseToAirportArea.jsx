@@ -2,7 +2,7 @@ import React from "react";
 
 function CloseToAirportArea() {
   return (
-    <div className="w-[90%] mx-auto lg:w-[80%] mt-6">
+    <div className="w-[90%] mx-auto lg:w-[80%] mt-12 closeToAirportArea">
       {" "}
       <div className="col-span-2  mt-5  mb-auto">
         <div>

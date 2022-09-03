@@ -3,8 +3,8 @@ import AppleLogo from "./Icons/AppleLogo";
 
 function AvailableArea() {
   return (
-    <div className="Available-image AvailableArea-image-mobile opacity-90 mt-8	relative  ">
-      <div className="mt-20px w-[90%] mx-auto lg:w-[80%] p-4 mb-2">
+    <div className="Available-image AvailableArea-image-mobile opacity-90 mt-12	relative AvailableArea-image ">
+      <div className="mt-20px w-[90%] mx-auto lg:w-[80%] p-4 mb-2 AvailableArea">
         <h1 className="text-5xl font-bold text-white text-center mt-6 AvailableArea-Heading-mobile">
           We are always available for you!
         </h1>

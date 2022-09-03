@@ -12,9 +12,9 @@ function Header({location}) {
   
   console.log(modal)
   return (
-    <div className='header-image opacity-90	relative'>
+    <div className='header-image opacity-90	relative  '>
        
-        <div className='Background-style mx-auto lg:w-[80%] '>
+        <div className='Background-style mx-auto lg:w-[80%] mainHeader '>
           <Play modal={modal} setModal={setModal} />
           <SearchArea location={location} />
         </div>
