@@ -11,22 +11,22 @@ function SearchArea({ location }) {
   const [dropOff, setdropOff] = useState(false);
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-  
-  const myfun = (date)=>{
-    setStartDate(date)
-   let endDate =  document.querySelector(".endDate").focus()
-  }
-  
+
+  const myfun = (date) => {
+    setStartDate(date);
+    let endDate = document.querySelector(".endDate").focus();
+  };
+
   console.log(endDate);
 
-  const SearchiconStyle = "absolute w-5 h-6 top-[5px] left-2 mt-[14px]";
-  const CalendericonStyle = "absolute w-5 h-6 top-[5px] left-2 mt-[14px]";
-  const TimeIconStyle = "absolute w-5 h-6 top-[5px] left-2 mt-[14px]";
+  const SearchiconStyle = "absolute w-5 h-6 top-[5px] left-2 mt-[18px]";
+  const CalendericonStyle = "absolute w-5 h-6 top-[5px] left-2 mt-[18px]";
+  const TimeIconStyle = "absolute w-5 h-6 top-[5px] left-2 mt-[18px]";
   const CheckIconStyle = "w-5 h-6 top-[5px] left-2 mt-[5px] mr-[4px]";
 
   return (
     <>
-      <div className="mx-auto w-[90%]">
+      <div className="mx-auto SearchArea-width  ">
         <div>
           <h1 className="text-white font-bold	text-3xl mobile-pdding header-heading">
             Rental Cars - Search,Compare & Save
@@ -41,7 +41,7 @@ function SearchArea({ location }) {
             />
             <label className="text-white">
               {" "}
-              Drop car off atr different location
+              Drop car off at different location
             </label>
             <br></br>
           </div>
@@ -56,7 +56,7 @@ function SearchArea({ location }) {
             <br></br>
             {driverAge && (
               <div className="driverAge">
-                <label className="text-white ml-5">Driver's age</label>
+                <label className="text-white ml-5">Driver&apos;s age</label>
 
                 <input
                   type="number"
@@ -69,48 +69,55 @@ function SearchArea({ location }) {
         <div className="SearchBar mobile-pdding-Search  header-heading ">
           <div className="relative border-[16px] mobile-border border-[#ffb700] Search-Area-Border-top Search-Area-Border-left">
             <div>
-            <input
-              type="text"
-              className="form-control  pl-8  w-[100%] SearchArea outline-none pt-[14px]"
-              placeholder="Pick-up Location"
-              value={location ? location : ""}
-            ></input>
-               <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">Pick-up-Location</label>
-               </div>
-            <Search SearchIcon={SearchiconStyle}  />
+              <input
+                type="text"
+                className="form-control  pl-8  w-[100%] SearchArea outline-none pt-[14px]"
+                placeholder="Pick-up Location"
+                value={location ? location : ""}
+              ></input>
+              <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+                Pick-up-Location
+              </label>
+            </div>
+            <Search SearchIcon={SearchiconStyle} />
           </div>
 
           {dropOff && (
             <div className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700] border-style">
-              <input
-                type="text"
-                className="form-control   px-8  w-[100%] SearchArea"
-                placeholder="Drop-off Location"
-              ></input>
+              <div>
+                <input
+                  type="text"
+                  className="form-control   px-8  w-[100%] SearchArea outline-none pt-[14px]"
+                  placeholder="Drop-off Location"
+                ></input>
+                <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+                  Pick-up-Location
+                </label>
+              </div>
               <Search SearchIcon={SearchiconStyle} />
             </div>
           )}
           <div className="Calender-Time">
-            <div
-              className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700]  border-style Calender-Time-Style "
-            >
+            <div className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700]  border-style Calender-Time-Style ">
               {/* <input
                 type="text"
                 className="form-control  pl-8  w-[100%] SearchArea"
                 placeholder="Pick-up Date"
               ></input> */}
               <div className="relative ">
-              <DatePicker
-                className="pl-8 SearchArea pt-4"
-                dateFormat="EEEE d MMMM , yyyy"
-                selected={startDate}
-                onChange={myfun}
-                selectsStart
-                startDate={startDate}
-                endDate={endDate}
-              />
-              <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">Pick-up-Date</label>
-               </div>
+                <DatePicker
+                  className="pl-8 SearchArea pt-4"
+                  dateFormat="EEEE d MMMM , yyyy"
+                  selected={startDate}
+                  onChange={myfun}
+                  selectsStart
+                  startDate={startDate}
+                  endDate={endDate}
+                />
+                <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+                  Pick-up-Date
+                </label>
+              </div>
               <Calender CalenderIcon={CalendericonStyle} className="mt-[5px]" />
             </div>
 
@@ -121,46 +128,46 @@ function SearchArea({ location }) {
                 placeholder="Time"
               ></input> */}
               <div className="relative ">
-
-              <DatePicker
-                className="px-8 w-[100%] SearchArea pt-4"
-                selected={startDate}
-                onChange={(date) => setStartDate(date)}
-                showTimeSelect
-                showTimeSelectOnly
-                timeIntervals={15}
-                timeCaption="Time"
-                dateFormat="h:mm aa"
-              />
-               <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">Pick-up-Time</label>
-               </div>
+                <DatePicker
+                  className="px-8 w-[100%] SearchArea pt-4"
+                  selected={startDate}
+                  onChange={(date) => setStartDate(date)}
+                  showTimeSelect
+                  showTimeSelectOnly
+                  timeIntervals={15}
+                  timeCaption="Time"
+                  dateFormat="h:mm aa"
+                />
+                <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+                  Pick-up-Time
+                </label>
+              </div>
               <Time TimeIcon={TimeIconStyle} />
             </div>
           </div>
           <div className="Calender-Time">
-            <div
-              className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700] border-style Calender-Time-Style"
-                        >
+            <div className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700] border-style Calender-Time-Style">
               {/* <input
                 type="text"
                 className="form-control border   pl-8 w-[100%] SearchArea"
                 placeholder="Drop-off Date"
               ></input> */}
-                            <div className="relative">
-
-              <DatePicker
-                className="pl-8 SearchArea pt-4 endDate"
-                dateFormat="EEEE d MMMM , yyyy"
-                selected={endDate}
-                onChange={(date) => setEndDate(date)}
-                selectsEnd
-                startDate={startDate}
-                endDate={endDate}
-                minDate={startDate}
-              />
-               <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">Drop-off-Date</label>
+              <div className="relative">
+                <DatePicker
+                  className="pl-8 SearchArea pt-4 endDate"
+                  dateFormat="EEEE d MMMM , yyyy"
+                  selected={endDate}
+                  onChange={(date) => setEndDate(date)}
+                  selectsEnd
+                  startDate={startDate}
+                  endDate={endDate}
+                  minDate={startDate}
+                />
+                <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+                  Drop-off-Date
+                </label>
               </div>
-              <Calender CalenderIcon={CalendericonStyle}  />
+              <Calender CalenderIcon={CalendericonStyle} />
             </div>
             <div className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700] border-style">
               {/* <div>
@@ -178,12 +185,13 @@ function SearchArea({ location }) {
                   timeCaption="Time"
                   dateFormat="h:mm aa"
                 />
-           
-              <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">Drop-off Time</label>
+
+                <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+                  Drop-off Time
+                </label>
               </div>
-              <div>
-              </div>
-              <Time TimeIcon={TimeIconStyle}  />
+              <div></div>
+              <Time TimeIcon={TimeIconStyle} />
             </div>
           </div>
 
@@ -207,7 +215,7 @@ function SearchArea({ location }) {
             <br></br>
             {driverAge && (
               <div className="driverAge">
-                <label className="text-white ml-5">Driver's age</label>
+                <label className="text-white ml-5">Driver&apos;s age</label>
 
                 <input
                   type="number"
@@ -219,12 +227,12 @@ function SearchArea({ location }) {
         </div>
 
         <div className="mobile-pdding flex justify-center header-checkbox">
-          <ul className="text-white flex-col justify-start  items-center lg:justify-evenly flex lg:flex-row w-[100%] ">
+          <ul className="text-white flex-col justify-center  sm:items-center lg:justify-evenly flex lg:flex-row w-[100%] ">
             <li className="flex items-center ">
               <Check CheckIcon={CheckIconStyle} />
               Free Cancellations on most bookings
             </li>
-            <li className="flex items-center">
+            <li className="flex 	">
               <Check CheckIcon={CheckIconStyle} />
               60,000+ locations
             </li>

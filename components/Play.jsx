@@ -12,7 +12,7 @@ function Play({modal, setModal }) {
   // const [isActive, setIsActive] = useState(false);
    
   return (  
-    <div className="flex justify-between mx-auto w-[90%] ">
+    <div className="flex justify-between mx-auto  ">
       <div className="mobile-pdding">
         <Link href="/">
         <img className="header-icon cursor-pointer " src="https://cdn.rcstatic.com/images/site_graphics/newsite/mobile/logos/rc-logo-small--white.svg"></img>

@@ -47,7 +47,7 @@ export default function CarsAvailableCardCrousel() {
   // console.log(buttonRef);
   return (
     <>
-    <div className="mt-8 w-[90%] mx-auto lg:w-[80%] ">
+    <div className="mt-12 w-[90%] mx-auto lg:w-[80%] CarsAvailableCrousel">
 
       <div className="Crousal-heading flex justify-between ">
         <h2 className="text-center text-lg font-bold my-3">Cars Available </h2>
@@ -66,9 +66,10 @@ export default function CarsAvailableCardCrousel() {
       </div>
       <div className="slider1 overflow-x-hidden	overflow-y-hidden">
       <Slider {...options} ref={buttonRef}>
-        {data.map((data)=>
+        {data.map((data,index)=>
         
-          <CarsAvailableCard data={data}/>
+          <CarsAvailableCard  key={`CarsAvailableCardCrousel${index}`}
+                    data={data}/>
         
         )} 
  
@@ -91,28 +92,28 @@ const data = [
   },
 
   {
-      carImg: "https://taxiservice247.com/images/cars/innova.jpg",
-      carName: "INNOVA"
+      carImg: "https://taxiservice247.com/images/cars/swift.jpg",
+      carName: "SWIFT"
   },
 
   {
-      carImg: "https://taxiservice247.com/images/cars/innova.jpg",
-      carName: "INNOVA"
+      carImg: "https://taxiservice247.com/images/cars/toyota-etios.jpg",
+      carName: "TOYOTA-ETIOS"
   },
 
   {
-      carImg: "https://taxiservice247.com/images/cars/innova.jpg",
-      carName: "INNOVA"
+      carImg: "https://taxiservice247.com/images/cars/tata-indigo.jpg",
+      carName: "TATA-INDIGO"
   },
   
   {
-      carImg: "https://taxiservice247.com/images/cars/innova.jpg",
-      carName: "INNOVA"
+      carImg: "https://taxiservice247.com/images/cars/indica.jpg",
+      carName: "INDICA"
   },
 
   {
-      carImg: "https://taxiservice247.com/images/cars/innova.jpg",
-      carName: "INNOVA"
+      carImg: "https://taxiservice247.com/images/cars/tempo.jpg",
+      carName: "TEMPO"
   },
 
 

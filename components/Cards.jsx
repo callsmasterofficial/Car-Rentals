@@ -2,7 +2,8 @@ import React from "react";
 
 function Cards() {
   return (
-    <div className="lg:grid grid-cols-6 lg:mb-5 lg:mt-20 w-[90%] mx-auto lg:w-[80%] border border-gray-200 rounded-lg">
+    
+    <div className="mt-12 lg:grid grid-cols-6 lg:mb-5 lg:mt-20 w-[90%] mx-auto lg:w-[80%] border border-gray-200 rounded-lg CardsArea">
       <div className="col-span-2 mt-5">
         <div className="flex">
           <div className="col-span-1 p-2">
@@ -10,7 +11,7 @@ function Cards() {
               className="max-w-none"
               src="https://cdn2.rcstatic.com/com.rentalcars.185492029745.eu-west-1.web.prod.static-live/images/landing-pages/usps/desktop/usp_calendar@1x.png"
               alt="Imge Not Found"
-            ></img>
+            />
           </div>
 
           <div className="col-span-1 p-2">
@@ -32,7 +33,7 @@ function Cards() {
               className="max-w-none"
               src="https://cdn2.rcstatic.com/com.rentalcars.185492029745.eu-west-1.web.prod.static-live/images/landing-pages/usps/desktop/usp_magnifier@1x.png"
               alt="Imge Not Found"
-            ></img>
+            />
           </div>
 
           <div className="col-span-1 p-2">
@@ -50,7 +51,7 @@ function Cards() {
               className="max-w-none"
               src="https://cdn2.rcstatic.com/com.rentalcars.185492029745.eu-west-1.web.prod.static-live/images/landing-pages/usps/desktop/usp_wallet@1x.png"
               alt="Imge Not Found"
-            ></img>
+            />
           </div>
 
           <div className="col-span-1 p-2">

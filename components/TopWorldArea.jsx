@@ -4,7 +4,7 @@ import Link from "next/link";
 function TopWorldArea() {
   return (
     <>
-      <div className="grid grid-cols-4 mb-5 topWorldArea w-[90%] mx-auto lg:w-[80%] mt-6 border border-gray-200 rounded-lg">
+      <div className="grid grid-cols-4 mb-5 topWorldArea w-[90%] mx-auto  mt-12 lg:w-[80%] border border-gray-200 rounded-lg TopWorld">
         <div className="col-span-2  mt-5  mb-auto">
           <div>
             <h1 className="font-bold p-3">Top Worldwide Destinations</h1>

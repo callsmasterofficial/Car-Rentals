@@ -15,9 +15,9 @@ function MobileLanguage({ setModal }) {
         </div>
 
         <div className=" grid grid-cols-2 mobile-modal-language">
-          {languageData.map((data) => {
+          {languageData.map((data,ind) => {
             return (
-              <div className="flex p-5 w-[100%] hover:bg-gray-200">
+              <div className="flex p-5 w-[100%] hover:bg-gray-200" key={`MobileLanguage${ind}`}>
                 <div className="h-[24px] w-[24px] ">
                   <img className="rounded-full" src={data.image}></img>
                 </div>

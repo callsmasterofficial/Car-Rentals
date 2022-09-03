@@ -13,7 +13,7 @@ const Accordion = ({ title, content }) => {
         <div className="text-lg">{title}</div>
         <div>{isActive ? <UpArrow/> : <DownArrow/>}</div>
       </div>
-      {isActive && <div className="accordion-content">{content}</div>}
+      {isActive && <div className="accordion-content pt-3">{content}</div>}
     </div>
   );
 };

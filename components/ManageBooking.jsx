@@ -2,7 +2,7 @@ import React from "react";
 
 function ManageBooking() {
   return (
-    <div className="flex items-center justify-center my-4 manage-booking-mobile">
+    <div className="flex items-center justify-center my-4 manage-booking-mobile manageBooking">
       <div className="flex-1">
         <img src="https://t-cf.bstatic.com/design-assets/assets/v3.24.2/illustrations-traveller/TripsCarRentalManageMyAccount.png">
         </img>
@@ -28,7 +28,7 @@ function ManageBooking() {
             <input type="text" className="form-control border border-gray-500 rounded-sm p-1 w-[100%]" />
           </div>
           <div className="px-6 py-4">
-          <button>Don't have your booking reference number?</button>
+          <button>Don&apos;t have your booking reference number?</button>
           </div>
           <div className="text-center px-6 py-4 ">
           <button className="text-white p-2 w-[100%] bg-green-600 hover:bg-green-800 rounded">Find my booking</button>
