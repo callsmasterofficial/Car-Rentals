@@ -2,7 +2,11 @@ import React from "react";
 
 function Brands() {
   return (
-    <div className="Brands-outer  sm:mt-[170px] md:mt-[170px] lg:mt-3 w-[90%] mx-auto lg:w-[80%]     ">
+    // sm:mt-[170px] md:mt-[170px] lg:mt-3
+    
+    <div className="Brands-outer mt-12 w-[90%] mx-auto lg:w-[80%]  BrandsArea    ">
+      
+
       <div>
         <h1 className="text-xl font-bold">
           Rentalcars.com connects you to the biggest brands in car hire.
@@ -10,16 +14,16 @@ function Brands() {
       </div>
       <div >
         <div className="sm:flex sm:flex-wrap  md:justify-evenly brand-inner grid-cols-2	 sm:mb-4 sm:mt-4 ">
-          <img classname="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/greenmotion_logo_lrg.gif"></img>
-          <img classname="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/avis_logo_lrg.gif"></img>
-          <img classname="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/easirent_logo_lrg.gif"></img>
-          <img classname="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/europcar_logo_lrg.gif"></img>
+          <img className="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/greenmotion_logo_lrg.gif" alt="Image Not Found"/>
+          <img className="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/avis_logo_lrg.gif" alt="Image Not Found"/>
+          <img className="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/easirent_logo_lrg.gif" alt="Image Not Found"/>
+          <img className="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/europcar_logo_lrg.gif" alt="Image Not Found"/>
         {/* </div>
         <div className="col-span-2 sm:flex sm:flex-wrap md:justify-evenly"> */}
-          <img classname="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/sixt_logo_lrg.gif"></img>
-          <img classname="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/alamo_logo_lrg.gif"></img>
-          <img classname="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/budget_logo_lrg.gif"></img>
-          <img classname="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/dollar_logo_lrg.gif"></img>
+          <img className="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/sixt_logo_lrg.gif" alt="Image Not Found"/>
+          <img className="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/alamo_logo_lrg.gif" alt="Image Not Found"/>
+          <img className="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/budget_logo_lrg.gif" alt="Image Not Found"/>
+          <img className="shadow-2xl" src="https://cdn2.rcstatic.com/images/supplier_logos/dollar_logo_lrg.gif" alt="Image Not Found"/>
         </div>
 
       </div>
