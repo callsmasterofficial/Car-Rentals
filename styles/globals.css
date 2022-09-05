@@ -340,11 +340,19 @@ input:checked ~ .dot {
   }
 }
 
-@media only screen and (min-width: 280px) and (max-width: 400px) {
+@media only screen and (min-width: 280px) and (max-width: 300px) {
   .AvailableArea-image-mobile 
   {
    
-    height: 80vh;
+    height: 90vh;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .AvailableArea-image-mobile 
+  {
+   
+    height: 75vh;
   }
 }
 
