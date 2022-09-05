@@ -31,7 +31,7 @@ function HamburgerMenu({modal, setModal}) {
 
       <div className="flex mt-4">
         <ManageBooking />
-        <div className="ml-1" >Manage Booking</div>
+        <div className="ml-1" onClick={() => setModal("manageBooking")}> Manage Booking</div>
       </div>
       </div>
       </div>

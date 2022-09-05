@@ -37,7 +37,7 @@ function Play({modal, setModal }) {
         </div>
         <div className="Header-Hamburger">
           
-        <button className="bg-gray-100 rounded p-2 m-3 text-red-700" onClick={()=>router.push("/manage")}> manage booking</button>
+        <button className="bg-gray-100 rounded p-2 m-3 text-blue-500" onClick={()=>router.push("/manage")}> manage booking</button>
         </div>
 
 

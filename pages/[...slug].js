@@ -44,29 +44,16 @@ function index({slug}) {
     <>
     <Header location={location} />
 
-    <div className="w-[90%] mx-auto lg:w-[80%]">
-      {/* <Modal/>  */}
-      {/* <Language/>  */}
+ 
        <Brands/>
       <Cards />
       <CardsArea/>
       <CarCard/>
-      {/* <CardsArea />
-      <CarCardNavbar/> */}
-      {/* <CarCardArea/> */}
+    
       <TopWorldArea />
       <CloseToAirportArea/>
       <AdditionalAccordian />
-      {/* <ManageBooking/> */}
-      {/* <PrivacyStatement/> */}
-      {/* <Footer /> */}
-       {/* <SearchArea/>
-      <HamburgerMenu/> */}
-
-
-      {/* <MobileLanguage/>
-      <MobileModal/> */}
-    </div>
+   
     <Footer />
 
     </>

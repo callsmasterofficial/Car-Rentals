@@ -12,7 +12,7 @@ function Footer() {
     <>
           {/* <div className="w-[100%] md:w-[80%] ninetyPercentWidth m-auto   3xl:w-[70%] 4xl:w-[60%] 5xl:w-[50%] 6xl:w-[45%]  3xl:m-auto "> */}
     <div className="mt-12">
-      <div className="bg-red-700">
+      <div className="bg-blue-500">
         <ul className="flex text-white items-center justify-center p-6 flex-wrap">
           <a>
             <li className="hover:underline cursor-pointer		 mr-3" onClick={()=>router.push("/Privacy")}>Privacy Notice</li>
