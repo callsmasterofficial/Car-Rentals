@@ -114,7 +114,7 @@ function SearchArea({ location }) {
                   startDate={startDate}
                   endDate={endDate}
                 />
-                <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+                <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
                   Pick-up-Date
                 </label>
               </div>
@@ -138,7 +138,7 @@ function SearchArea({ location }) {
                   timeCaption="Time"
                   dateFormat="h:mm aa"
                 />
-                <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+                <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
                   Pick-up-Time
                 </label>
               </div>
@@ -163,7 +163,7 @@ function SearchArea({ location }) {
                   endDate={endDate}
                   minDate={startDate}
                 />
-                <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+                <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
                   Drop-off-Date
                 </label>
               </div>
@@ -186,7 +186,7 @@ function SearchArea({ location }) {
                   dateFormat="h:mm aa"
                 />
 
-                <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+                <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
                   Drop-off Time
                 </label>
               </div>
@@ -218,7 +218,7 @@ function SearchArea({ location }) {
                 <label className="text-white ml-5">Driver&apos;s age</label>
 
                 <input
-                  type="number"
+                  type="number" 
                   className="form-control w-12 px-1  outline-none text-black border border-gray-500 rounded-sm ml-2 "
                 ></input>
               </div>

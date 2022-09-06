@@ -8,7 +8,7 @@ function Brands() {
 
       <div>
         <h1 className="text-xl font-bold">
-          Rentalcars.com connects you to the biggest brands in car hire.
+          Rentalcars.rent connects you to the biggest brands in car hire.
         </h1>
       </div>
       <div >

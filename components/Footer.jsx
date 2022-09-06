@@ -48,9 +48,9 @@ function Footer() {
     <div className="lg:grid lg:grid-cols-4 lg:footer">
         <div className="col-span-3  mt-5">
         <p>
-        Rentalcars.com is a trading name of Booking.com Transport Limited which is a limited company registered in England and Wales (Number: 05179829) whose registered address is at 100 New Bridge Street, London, EC4V 6JA. VAT number: GB 855349007.
+        Rentalcars.rent is a limited company registered in England and Wales (Number: 05179829) whose registered address is at 100 New Bridge Street, London, EC4V 6JA. VAT number: GB 855349007.
         </p>
-        <p>Rentalcars.com is part of Booking Holdings Inc., the world leader in online travel & related services.</p>
+        <p>Rentalcars.rent Inc., the world leader in online travel & related services.</p>
         </div>
         <div className="col-span-1 ml-28 mt-5 mobile-footer-image object-center	">
         <img className="w-24 object-center	" src="https://cdn2.rcstatic.com/com.rentalcars.185492029745.eu-west-1.web.prod.static-live/images/landing-pages/world-travel-award-2020/desktop/world-travel-award-2020@2x.png"/>
@@ -69,7 +69,7 @@ function Footer() {
     </div>
 
     <div className="text-center">
-    <p>Copyright © 2022 Booking.com Transport Limited trading as Rentalcars.com. All rights reserved </p>
+    <p>Copyright © 2022 Rentalcars.rent .All rights reserved </p>
     </div>
     </div>
     {/* </div> */}
