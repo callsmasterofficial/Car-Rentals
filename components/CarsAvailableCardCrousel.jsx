@@ -87,7 +87,7 @@ export default function CarsAvailableCardCrousel() {
 
 const data = [
   {
-      carImg: "https://taxiservice247.com/images/cars/innova.jpg",
+      carImg: "https://cdn2.rcstatic.com/images/car_images/new_images/jeep/grand_cherokee.jpg",
       carName: "INNOVA"
   },
 
