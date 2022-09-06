@@ -219,7 +219,6 @@ function SearchArea({ location }) {
 
                 <input
                   type="number" 
-                  size="2" maxlength="2"
                   className="form-control w-12 px-1  outline-none text-black border border-gray-500 rounded-sm ml-2 "
                 ></input>
               </div>
