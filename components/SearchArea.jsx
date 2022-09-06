@@ -75,7 +75,7 @@ function SearchArea({ location }) {
                 placeholder="Pick-up Location"
                 value={location ? location : ""}
               ></input>
-              <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+              <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
                 Pick-up-Location
               </label>
             </div>
@@ -90,7 +90,7 @@ function SearchArea({ location }) {
                   className="form-control   px-8  w-[100%] SearchArea outline-none pt-[14px]"
                   placeholder="Drop-off Location"
                 ></input>
-                <label className="absolute text-[14px] bg-white font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
+                <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
                   Pick-up-Location
                 </label>
               </div>
