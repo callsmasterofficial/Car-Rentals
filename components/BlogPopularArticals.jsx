@@ -7,9 +7,9 @@ function BlogPopularArticals() {
       <div>
         <h1 className="text-xl font-bold mt-10 mb-4">POPULAR ARTICALS</h1>
       </div>
-      {BlogPopularArticalsData.map((data) => {
+      {BlogPopularArticalsData.map((data,index) => {
         return (
-          <div className="flex mt-2 mb-2 p-2">
+          <div className="flex mt-2 mb-2 p-2" key={`BlogPopularArticals${index}`}>
             <div className="mr-4 hover:cursor-pointer ">
               <img
                 className="w-[100%] h-[60px]"

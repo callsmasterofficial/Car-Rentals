@@ -8,9 +8,9 @@ function BlogCard() {
     <>
       <div className="lg:flex lg:col-span-12 mt-5 w-[90%]  mx-auto lg:w-[80%] helpArea">
         <div className="lg:col-span-8 lg:w-[70%] lg:mr-4	">
-          {BlogCardData.map((data) => {
+          {BlogCardData.map((data,index) => {
             return (
-              <div className="border mt-5 md:flex">
+              <div className="border mt-5 md:flex"  key={`BlogCard${index}`}>
                 <div className="relative hover:cursor-pointer	">
                   <img className="h-[100%]" src="https://cdn2.rcstatic.com/images/seo_graphics/worldwide-where/niagara-falls-2-canada-800-359.jpg" />
                   <div className="absolute left-0 top-4 bg-green-900 h-8 p-1 opacity-75 text-white		">
