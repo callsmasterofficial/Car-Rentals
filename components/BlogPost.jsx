@@ -73,19 +73,19 @@ function BlogPost() {
               </div>
               <div>
                 <p className="mt-2 mb-2">
-                  We&#39;ve created a quiz — 'Worldwide… where?' — to celebrate
+                  We’ve created a quiz — &apos;Worldwide… where?&apos; — to celebrate
                   those beautiful but lesser-known locations around the globe.
                 </p>
 
                 <p className="mt-2 mb-2">
                   Guest travel bloggers sent us images of their favourite hidden
-                  travel spots, and it&#39;s your job to guess where in the world
+                  travel spots, and it’s your job to guess where in the world
                   these secret escapes are located. Take the quiz.
                 </p>
                 <p className="mt-2 mb-2">
                   A special thank you to the travel bloggers who submitted their
                   images for our quiz. View their blogs: Surf Sistas, The What
-                  Now Blog, Dream In Pink, Hannah&#39;s Little Corner, Wild
+                  Now Blog, Dream In Pink, Hannah’s Little Corner, Wild
                   Swimming, As a Blonde, Aurora Stories and Sunnydei.
                 </p>
                 <p className="mt-2 mb-2">
@@ -100,7 +100,7 @@ function BlogPost() {
               </div>
               <p className="mt-2 mb-2">
                 When asked which destinations you believed to be the most
-                overrated, the city often known as &#39;Sin City&#39; took the number
+                overrated, the city often known as ‘Sin City’ took the number
                 one spot, with 23% of people voting the Las Vegas Strip as
                 overrated.
               </p>
@@ -108,20 +108,20 @@ function BlogPost() {
               <img src="https://www.rentalcars.com/images/seo_graphics/worldwide-where/las-vegas-strip-2-usa-800-533.jpg" />
               <p className="mt-2 mb-2">
                 While most people have high expectations of the world-famous US
-                city with the slogan 'what happens in Vegas, stays in Vegas', it
-                seems the promise of wild days and crazy nights isn&#39;t always a
+                city with the slogan &apos;what happens in Vegas, stays in Vegas&apos;, it
+                seems the promise of wild days and crazy nights isn’t always a
                 reality.
               </p>
               <img src="https://www.rentalcars.com/images/seo_graphics/worldwide-where/las-vegas-strip-3-usa-800-533.jpg" />
               <p className="mt-2 mb-2">
-                The 'City That Never Sleeps' followed closely in second place,
+                The &apos;City That Never Sleeps&apos; followed closely in second place,
                 with 22% of those surveyed voting Times Square, NYC, as
                 overhyped.
               </p>
               <img src="https://www.rentalcars.com/images/seo_graphics/worldwide-where/times-squre-new-york-city-usa-800-533.jpg" />
               <p className="mt-2 mb-2">
-                Following in third place is the so-called &#39;dream location&#39;,
-                Disney World Orlando, with 19% stating it didn&#39;t live up to
+                Following in third place is the so-called ‘dream location’,
+                Disney World Orlando, with 19% stating it didn’t live up to
                 expectations.
               </p>
               <img
@@ -266,7 +266,7 @@ function BlogPost() {
                 further 13% feel safe on the roads with Irish motorists.
               </p>
               <p className="mt-2 mb-2">
-                Holiday makers also voted drivers to be &#39;OK&#39; on the roads in
+                Holiday makers also voted drivers to be ‘OK’ on the roads in
                 Spain (65%), France (61%), and Portugal (59%). However, those
                 driving in Greece believe extra caution is needed, with 46%
                 claiming there are unsafe drivers on the road, while 44% would
@@ -287,7 +287,7 @@ function BlogPost() {
                <ul>
                 <li className="hover:text-blue-500 text-gray-500"><a>&gt;UK Driving Licence Changes, June 2015</a></li>
                 <li className="hover:text-blue-500 text-gray-500"><a>&gt;Rentalcars.com Nominated for Two World Travel Awards</a></li>
-                <li className="hover:text-blue-500 text-gray-500"><a>&gt;Rentalcars.com has The World's Leading Car Rental Company App 2015</a></li>
+                <li className="hover:text-blue-500 text-gray-500"><a>&gt;Rentalcars.com has The World&apos;s Leading Car Rental Company App 2015</a></li>
                 <li className="hover:text-blue-500 text-gray-500"><a>&gt;Meet Glen The Guru</a></li>
                 <li className="hover:text-blue-500 text-gray-500"><a>&gt;Car Hire 3000 – Cheap Car Hire</a></li>
 
