@@ -29,7 +29,7 @@ function SearchArea({ location }) {
       <div className="mx-auto SearchArea-width  ">
         <div>
           <h1 className="text-white font-bold	text-3xl mobile-pdding header-heading">
-            Rental Cars - Search,Compare & Save
+            Rental Cars - Search, Compare and Save
           </h1>
         </div>
         <div className="flex">
@@ -107,7 +107,7 @@ function SearchArea({ location }) {
               <div className="relative ">
                 <DatePicker
                   className="pl-8 SearchArea pt-4"
-                  dateFormat="EEEE d MMMM , yyyy"
+                  dateFormat="EEE d MMM"
                   selected={startDate}
                   onChange={myfun}
                   selectsStart
@@ -121,7 +121,7 @@ function SearchArea({ location }) {
               <Calender CalenderIcon={CalendericonStyle} className="mt-[5px]" />
             </div>
 
-            <div className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700] border-style">
+            <div className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700] border-style mobile-border-left">
               {/* <input
                 type="text"
                 className="form-control  px-8 w-[100%] SearchArea"
@@ -129,7 +129,7 @@ function SearchArea({ location }) {
               ></input> */}
               <div className="relative ">
                 <DatePicker
-                  className="px-8 w-[100%] SearchArea pt-4"
+                  className="pl-8 pr-4 w-[100%] SearchArea pt-4"
                   selected={startDate}
                   onChange={(date) => setStartDate(date)}
                   showTimeSelect
@@ -146,7 +146,7 @@ function SearchArea({ location }) {
             </div>
           </div>
           <div className="Calender-Time">
-            <div className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700] border-style Calender-Time-Style">
+            <div className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700] border-style Calender-Time-Style ">
               {/* <input
                 type="text"
                 className="form-control border   pl-8 w-[100%] SearchArea"
@@ -155,7 +155,7 @@ function SearchArea({ location }) {
               <div className="relative">
                 <DatePicker
                   className="pl-8 SearchArea pt-4 endDate"
-                  dateFormat="EEEE d MMMM , yyyy"
+                  dateFormat="EEE d MMM"
                   selected={endDate}
                   onChange={(date) => setEndDate(date)}
                   selectsEnd
@@ -169,14 +169,14 @@ function SearchArea({ location }) {
               </div>
               <Calender CalenderIcon={CalendericonStyle} />
             </div>
-            <div className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700] border-style">
+            <div className="relative border-x-[16px]  border-b-[16px] mobile-border-left-right border-[#ffb700] border-style mobile-border-left">
               {/* <div>
               <label className="absolute	">hello</label>
               </div> */}
 
               <div className="relative ">
                 <DatePicker
-                  className="px-8 w-[100%] SearchArea pt-4 "
+                  className="pl-8 pr-4 w-[100%] SearchArea pt-4 "
                   selected={startDate}
                   onChange={(date) => setStartDate(date)}
                   showTimeSelect

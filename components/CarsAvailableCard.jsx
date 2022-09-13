@@ -27,37 +27,3 @@ function CarsAvailableCard({data}) {
 // }
 
 export default CarsAvailableCard
-
-const data = [
-    {
-        carImg: "https://taxiservice247.com/images/cars/innova.jpg",
-        carName: "INNOVA"
-    },
-
-    {
-        carImg: "https://taxiservice247.com/images/cars/innova.jpg",
-        carName: "INNOVA"
-    },
-
-    {
-        carImg: "https://taxiservice247.com/images/cars/innova.jpg",
-        carName: "INNOVA"
-    },
-
-    {
-        carImg: "https://taxiservice247.com/images/cars/innova.jpg",
-        carName: "INNOVA"
-    },
-    
-    {
-        carImg: "https://taxiservice247.com/images/cars/innova.jpg",
-        carName: "INNOVA"
-    },
-
-    {
-        carImg: "https://taxiservice247.com/images/cars/innova.jpg",
-        carName: "INNOVA"
-    },
-
-
-]

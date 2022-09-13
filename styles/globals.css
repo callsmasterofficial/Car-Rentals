@@ -28,26 +28,25 @@ a {
   }
 }
 @media only screen and (min-width: 1000px) {
+  .header-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../public/Images/Great-Ocean-Road-Victoria-Australia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    /* width: 100vw; */
+    /* overflow: hidden; */
+  }
+}
 
-.header-image {
+.Available-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../public/Images/Great-Ocean-Road-Victoria-Australia.jpg");
+    url("https://taxiservice247.com/images/bg1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
-  /* width: 100vw; */
-  /* overflow: hidden; */
-}
-}
-
-.Available-image{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("https://taxiservice247.com/images/bg1.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 60vh;
+  height: auto;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 350px) {
@@ -63,25 +62,19 @@ height: 60vh;
   .brand-inner {
     display: grid;
     margin: 0 auto;
-    
   }
 
   .brand-inner img {
     margin: 4px auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
   }
-
 }
 @media only screen and (min-width: 350px) {
-  
   .brand-inner img {
     margin: 4px auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
   }
 }
-
 
 /* @media only screen and (min-width: 350px) and (max-width: 410px) {
   .Brands-outer {
@@ -163,7 +156,7 @@ height: 60vh;
   }
 }
 
-@media only screen and (min-width: 510px) {
+@media only screen and (min-width: 280px) {
   .Calender-Time {
     display: flex;
   }
@@ -201,18 +194,22 @@ height: 60vh;
     padding-top: 10px;
   }
 }
-@media only screen and (min-width: 280px) and (max-width: 320px) {
+@media only screen and (min-width: 280px) and (max-width: 640px) {
   .mobile-border {
     border-width: 8px;
     border-color: #ffb700;
   }
 }
-@media only screen and (min-width: 280px) and (max-width: 320px) {
+@media only screen and (min-width: 280px) and (max-width: 640px) {
   .mobile-border-left-right {
-    border-bottom-width:8px;
-border-left-width:8px;
-border-right-width:8px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    border-right-width: 8px;
     border-color: #ffb700;
+  }
+
+  .mobile-border-left {
+    border-left-width: 0px;
   }
 }
 
@@ -278,14 +275,13 @@ border-right-width:8px;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 350px) {
-  .mobile-modal-language{
-    grid:none ;
+  .mobile-modal-language {
+    grid: none;
   }
 }
 
-
 @media only screen and (min-width: 280px) and (max-width: 640px) {
-  .manage-booking-mobile{
+  .manage-booking-mobile {
     flex-direction: column;
   }
 }
@@ -296,35 +292,32 @@ input:checked ~ .dot {
 }
 
 @media only screen and (min-width: 280px) and (max-width: 640px) {
-  .Cookies-mobile{
+  .Cookies-mobile {
     width: 100%;
   }
 }
 
-.select-option{
+.select-option {
   width: 100%;
-
 }
 @media only screen and (min-width: 280px) and (max-width: 639px) {
-  .next-trip-mobile
-  {
+  .next-trip-mobile {
     display: block;
   }
 }
 
-.carImgBox{
+.carImgBox {
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
-.carImgBox:hover>.h1div{
+.carImgBox:hover > .h1div {
   transition: all 0.3s ease-in-out;
   transform: translateY(-14px);
 }
 
 @media only screen and (min-width: 280px) and (max-width: 639px) {
-  .AvailableArea-Heading-mobile
-  {
+  .AvailableArea-Heading-mobile {
     font-size: 20px;
     font-weight: bold;
     margin-top: 2px;
@@ -332,745 +325,760 @@ input:checked ~ .dot {
 }
 
 @media only screen and (min-width: 280px) and (max-width: 639px) {
-  .AvailableArea-SubHeading-mobile 
-  {
+  .AvailableArea-SubHeading-mobile {
     font-size: 16px;
     margin-top: 2px;
-
   }
 }
 
 @media only screen and (min-width: 280px) and (max-width: 300px) {
-  .AvailableArea-image-mobile 
-  {
-   
-    height: 90vh;
+  .AvailableArea-image-mobile {
+    height: auto;
   }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 400px) {
-  .AvailableArea-image-mobile 
-  {
-   
-    height: 75vh;
+  .AvailableArea-image-mobile {
+    height: auto;
   }
 }
 
+@media only screen and (min-width: 400px) and (max-width: 640px) {
+  .AvailableArea-image-mobile {
+    height: auto;
+  }
+}
 @media only screen and (min-width: 640px) and (max-width: 850px) {
-  .AvailableArea-image-mobile 
-  {
-   
-    height: 75vh;
+  .AvailableArea-image-mobile {
+    height: auto;
   }
 }
-
 
 @media only screen and (min-width: 280px) and (max-width: 640px) {
-  .appBtn 
-  {
-   
-margin-top: 4px;  }
+  .appBtn {
+    margin-top: 4px;
+  }
 }
-
-
-
-.driverCheckBox{
+@media only screen and (min-width: 280px) and (max-width: 1024px) {
+  .blogCrousel {
+    display: none;
+  }
+}
+.driverCheckBox {
   display: none;
 }
 
-@media only screen and (min-width: 1025px)  {
-.driverCheckBox{
- display: flex;
-}
-}
-
-@media only screen and (min-width: 280px) and (max-width:370px)  {
-  .Availaible-mobile-buttons{
-   display: block;
-   text-align: center;
-   
+@media only screen and (min-width: 1025px) {
+  .driverCheckBox {
+    display: flex;
   }
-  }
-
-  @media only screen and (min-width: 280px) and (max-width:370px)  {
-    .Availaible-mobile-button2{
-     margin-left: 0px;
-     margin-top: 4px;
-     
-    }
-    }
-
-
-.react-datepicker__input-container>input{
-  width: 100% ;
-  outline:none;
 }
 
-@media only screen and (min-width: 280px) and (max-width:1000px)  {
-  .mobile-footer-image{
+@media only screen and (min-width: 280px) and (max-width: 370px) {
+  .Availaible-mobile-buttons {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 370px) {
+  .Availaible-mobile-button2 {
+    margin-left: 0px;
+    margin-top: 4px;
+  }
+}
+
+.react-datepicker__input-container > input {
+  width: 100%;
+  outline: none;
+}
+
+.BlogCrousalImage{
+  width: inherit;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1000px) {
+  .mobile-footer-image {
     grid: none;
     margin-left: 0;
     margin-bottom: 5px;
     display: flex;
     justify-content: center;
-   
   }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1024px) {
+  .SearchArea-width {
+    width: 90%;
   }
+}
 
-  @media only screen and (min-width: 280px) and (max-width:1024px)  {
-    .SearchArea-width{
-     width: 90%;
-     
-    }
-    }
-
-  @media only screen and (min-width: 280px) and (max-width:300px)  {
-      .AvailableArea-image-mobile{
-       width: 100%;
-       
-      }
+@media only screen and (min-width: 280px) and (max-width: 300px) {
+  .AvailableArea-image-mobile {
+    width: 100%;
   }
-  
+}
+
+.blogNavbarButton:active{
+  background-color:gray;
 
 
-@media only screen and (min-width: 1706px) and (max-width:1920px)  {
-  .mainHeader{
-    width: 75% !important;  
+}
+
+.blogcarouselslider .slick-next{
+display: none !important;
+}
+.blogcarouselslider .slick-prev{
+  display: none !important;
+
+  }
+  @media only screen and (min-width: 280px) and (max-width: 1024px) {
+
+  .CrouselAreaMobile{
+    margin-bottom: 60px;
+
+  }
+}
+
+
+@media only screen and (min-width: 1706px) and (max-width: 1920px) {
+  .mainHeader {
+    width: 75% !important;
     margin: auto;
-  }      
+  }
 
-  
-  .header-image{
+  .header-image {
     height: 80vh;
   }
 
-  .CardsArea{
-    width: 75% !important;  
-    margin: auto;
-
-  }
-
-  .BrandsArea{
-    width: 75% !important;  
+  .CardsArea {
+    width: 75% !important;
     margin: auto;
   }
 
-  .CrouselArea{
-    width: 75% !important;  
+  .BrandsArea {
+    width: 75% !important;
     margin: auto;
   }
 
-  .CardArea2{
-    width: 75% !important;  
+  .CrouselArea {
+    width: 75% !important;
     margin: auto;
   }
 
-  .CarsAvailableCrousel{
-    width: 75% !important;  
+  .CardArea2 {
+    width: 75% !important;
     margin: auto;
   }
 
-  .TopWorld{
-    width: 75% !important;  
-    margin: auto;
-  }
-  
-  .FrequentlyAccordian{
-    width: 75% !important;  
-    margin: auto;
-    margin-bottom :20px;
-  }
-
-  .Footer-main{
-    width: 75% !important;  
+  .CarsAvailableCrousel {
+    width: 75% !important;
     margin: auto;
   }
 
-  .AvailableArea{
-    width: 75% !important;  
+  .TopWorld {
+    width: 75% !important;
     margin: auto;
   }
 
-  .AvailableArea-image{
+  .FrequentlyAccordian {
+    width: 75% !important;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .Footer-main {
+    width: 75% !important;
+    margin: auto;
+  }
+
+  .AvailableArea {
+    width: 75% !important;
+    margin: auto;
+  }
+
+  .AvailableArea-image {
     height: 80vh;
-
   }
 
-  .manageBooking{
-    width: 75% !important;  
+  .manageBooking {
+    width: 75% !important;
     margin: auto;
   }
 
-  .modalArea{
-    width: 75% !important; 
-    height: 80%; 
-    margin: auto;
-  }
-
-  .languageArea{
-    width: 75% !important;  
+  .modalArea {
+    width: 75% !important;
     height: 80%;
     margin: auto;
   }
 
-  .privacyArea{
-    width: 75% !important;  
+  .languageArea {
+    width: 75% !important;
+    height: 80%;
     margin: auto;
   }
 
-  .helpArea{
-    width: 75% !important;  
+  .privacyArea {
+    width: 75% !important;
     margin: auto;
   }
 
-  .carCardsArea{
-    width: 75% !important;  
+  .helpArea {
+    width: 75% !important;
     margin: auto;
   }
 
-  .closeToAirportArea{
-    width: 75% !important;  
+  .carCardsArea {
+    width: 75% !important;
     margin: auto;
   }
 
-  .additionalAccordiaArea{
-    width: 75% !important;  
+  .closeToAirportArea {
+    width: 75% !important;
     margin: auto;
   }
 
+  .additionalAccordiaArea {
+    width: 75% !important;
+    margin: auto;
+  }
 }
-  @media only screen and (min-width: 1920px) and (max-width:2048px)  {
-    .mainHeader{
-      width: 70% !important;
-      margin: auto;
-    }
-    
-    .header-image{
-      height: 70vh;
-    }
-    .CardsArea{
-      width: 70% !important;  
-      margin: auto;
-  
-    }
+@media only screen and (min-width: 1920px) and (max-width: 2048px) {
+  .mainHeader {
+    width: 70% !important;
+    margin: auto;
+  }
 
-    .BrandsArea{
-      width: 70% !important;  
-      margin: auto;
-    }
+  .header-image {
+    height: 70vh;
+  }
+  .CardsArea {
+    width: 70% !important;
+    margin: auto;
+  }
 
-    .CrouselArea{
-      width: 70% !important;  
-      margin: auto;
-    }
+  .BrandsArea {
+    width: 70% !important;
+    margin: auto;
+  }
 
-    .CardArea2{
-      width: 70% !important;  
-      margin: auto;
-    }
+  .CrouselArea {
+    width: 70% !important;
+    margin: auto;
+  }
 
-    .CarsAvailableCrousel{
-      width: 70% !important;  
-      margin: auto;
-    }
-    .TopWorld{
-      width: 70% !important;  
-      margin: auto;
-    }
+  .CardArea2 {
+    width: 70% !important;
+    margin: auto;
+  }
 
-    .FrequentlyAccordian{
-      width: 70% !important;  
-      margin: auto;
-      margin-bottom :20px;
+  .CarsAvailableCrousel {
+    width: 70% !important;
+    margin: auto;
+  }
+  .TopWorld {
+    width: 70% !important;
+    margin: auto;
+  }
 
-    }
-    .Footer-main{
-      width: 70% !important;  
-      margin: auto;
-    }
+  .FrequentlyAccordian {
+    width: 70% !important;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .Footer-main {
+    width: 70% !important;
+    margin: auto;
+  }
 
-    .AvailableArea{
-      width: 70% !important;  
-      margin: auto;
-    }
+  .AvailableArea {
+    width: 70% !important;
+    margin: auto;
+  }
 
-    .AvailableArea-image{
-      height: 70vh;
-  
-    }
+  .AvailableArea-image {
+    height: 70vh;
+  }
 
-    .manageBooking{
-      width: 70% !important;  
-      margin: auto;
-    }
-    .modalArea{
-      width: 70% !important;  
-      height: 80%;
-      margin: auto;
-    }
-    .languageArea{
-      width: 70% !important;  
-      height: 80%;
-      margin: auto;
-    }
-    .privacyArea{
-      width: 70% !important;  
-      margin: auto;
-    }
+  .manageBooking {
+    width: 70% !important;
+    margin: auto;
+  }
+  .modalArea {
+    width: 70% !important;
+    height: 80%;
+    margin: auto;
+  }
+  .languageArea {
+    width: 70% !important;
+    height: 80%;
+    margin: auto;
+  }
+  .privacyArea {
+    width: 70% !important;
+    margin: auto;
+  }
 
-    .helpArea{
-      width: 70% !important;  
-      margin: auto;
-    }
+  .helpArea {
+    width: 70% !important;
+    margin: auto;
+  }
 
-    .carCardsArea{
-      width: 70% !important;  
-      margin: auto;
-    }
-  
-    .closeToAirportArea{
-      width: 70% !important;  
-      margin: auto;
-    }
-  
-    .additionalAccordiaArea{
-      width: 70% !important;  
-      margin: auto;
-    }
+  .carCardsArea {
+    width: 70% !important;
+    margin: auto;
+  }
+
+  .closeToAirportArea {
+    width: 70% !important;
+    margin: auto;
+  }
+
+  .additionalAccordiaArea {
+    width: 70% !important;
+    margin: auto;
+  }
 }
 
-
-@media only screen and (min-width: 2048px) and (max-width:2304px)  {
-  .mainHeader{
+@media only screen and (min-width: 2048px) and (max-width: 2304px) {
+  .mainHeader {
     width: 65% !important;
     margin: auto;
-  }      
+  }
 
-  .header-image{
+  .header-image {
     height: 60vh;
   }
 
-  .CardsArea{
-    width: 65% !important;  
-    margin: auto;
-
-  }
-
-  .BrandsArea{
-    width: 65% !important;  
+  .CardsArea {
+    width: 65% !important;
     margin: auto;
   }
 
-  .CrouselArea{
-    width: 65% !important;  
+  .BrandsArea {
+    width: 65% !important;
     margin: auto;
   }
 
-  .CardArea2{
-    width: 65% !important;  
+  .CrouselArea {
+    width: 65% !important;
     margin: auto;
   }
 
-  .CarsAvailableCrousel{
-    width: 65% !important;  
-    margin: auto;
-  }
-  .TopWorld{
-    width: 65% !important;  
+  .CardArea2 {
+    width: 65% !important;
     margin: auto;
   }
 
-  .FrequentlyAccordian{
-    width: 65% !important;  
+  .CarsAvailableCrousel {
+    width: 65% !important;
     margin: auto;
-    margin-bottom :20px;
-
   }
-  .Footer-main{
-    width: 65% !important;  
+  .TopWorld {
+    width: 65% !important;
     margin: auto;
   }
 
-  .AvailableArea{
-    width: 65% !important;  
+  .FrequentlyAccordian {
+    width: 65% !important;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .Footer-main {
+    width: 65% !important;
     margin: auto;
   }
 
-  .AvailableArea-image{
+  .AvailableArea {
+    width: 65% !important;
+    margin: auto;
+  }
+
+  .AvailableArea-image {
     height: 60vh;
-
   }
 
-  .manageBooking{
-    width: 65% !important;  
+  .manageBooking {
+    width: 65% !important;
     margin: auto;
   }
 
-  .modalArea{
-    width: 65% !important;  
+  .modalArea {
+    width: 65% !important;
     height: 80%;
     margin: auto;
   }
-  .languageArea{
-    width: 65% !important;  
+  .languageArea {
+    width: 65% !important;
     height: 80%;
     margin: auto;
   }
 
-  .privacyArea{
-    width: 65% !important;  
+  .privacyArea {
+    width: 65% !important;
     margin: auto;
   }
 
-  .helpArea{
-    width: 65% !important;  
+  .helpArea {
+    width: 65% !important;
     margin: auto;
   }
 
-  .carCardsArea{
-    width: 65% !important;  
+  .carCardsArea {
+    width: 65% !important;
     margin: auto;
   }
 
-  .closeToAirportArea{
-    width: 65% !important;  
+  .closeToAirportArea {
+    width: 65% !important;
     margin: auto;
   }
 
-  .additionalAccordiaArea{
-    width: 65% !important;  
+  .additionalAccordiaArea {
+    width: 65% !important;
     margin: auto;
   }
 }
 
-@media only screen and (min-width: 2304px) and (max-width:3072px)  {
-  .mainHeader{
+@media only screen and (min-width: 2304px) and (max-width: 3072px) {
+  .mainHeader {
     width: 55% !important;
     margin: auto;
   }
-  
-  .header-image{
+
+  .header-image {
     height: 50vh;
   }
 
-  .CardsArea{
-    width: 55% !important;  
-    margin: auto;
-
-  }
-  .BrandsArea{
-    width: 55% !important;  
+  .CardsArea {
+    width: 55% !important;
     margin: auto;
   }
-
-  .CrouselArea{
-    width: 55% !important;  
+  .BrandsArea {
+    width: 55% !important;
     margin: auto;
   }
 
-  .CardArea2{
-    width: 55% !important;  
+  .CrouselArea {
+    width: 55% !important;
     margin: auto;
   }
 
-  .CarsAvailableCrousel{
-    width: 55% !important;  
-    margin: auto;
-  }
-  .TopWorld{
-    width: 55% !important;  
+  .CardArea2 {
+    width: 55% !important;
     margin: auto;
   }
 
-  .FrequentlyAccordian{
-    width: 55% !important;  
+  .CarsAvailableCrousel {
+    width: 55% !important;
     margin: auto;
-    margin-bottom :20px;
-
   }
-
-  .Footer-main{
-    width: 55% !important;  
+  .TopWorld {
+    width: 55% !important;
     margin: auto;
   }
 
-  .AvailableArea{
-    width: 55% !important;  
+  .FrequentlyAccordian {
+    width: 55% !important;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .Footer-main {
+    width: 55% !important;
     margin: auto;
   }
 
-  .AvailableArea-image{
+  .AvailableArea {
+    width: 55% !important;
+    margin: auto;
+  }
+
+  .AvailableArea-image {
     height: 50vh;
-
   }
 
-  .manageBooking{
-    width: 55% !important;  
+  .manageBooking {
+    width: 55% !important;
     margin: auto;
   }
 
-  .modalArea{
-    width: 55% !important;  
+  .modalArea {
+    width: 55% !important;
     height: 80%;
     margin: auto;
   }
 
-  .languageArea{
-    width: 55% !important;  
+  .languageArea {
+    width: 55% !important;
     height: 80%;
     margin: auto;
   }
-  .privacyArea{
-    width: 55% !important;  
+  .privacyArea {
+    width: 55% !important;
     margin: auto;
   }
 
-  .helpArea{
-    width: 55% !important;  
+  .helpArea {
+    width: 55% !important;
     margin: auto;
   }
-  .carCardsArea{
-    width: 55% !important;  
-    margin: auto;
-  }
-
-  .closeToAirportArea{
-    width: 55% !important;  
+  .carCardsArea {
+    width: 55% !important;
     margin: auto;
   }
 
-  .additionalAccordiaArea{
-    width: 55% !important;  
+  .closeToAirportArea {
+    width: 55% !important;
+    margin: auto;
+  }
+
+  .additionalAccordiaArea {
+    width: 55% !important;
     margin: auto;
   }
 }
 
-
-
-
-@media only screen and (min-width: 3072px) and (max-width:4608px)  {
-  .mainHeader{
+@media only screen and (min-width: 3072px) and (max-width: 4608px) {
+  .mainHeader {
     width: 50% !important;
     margin: auto;
   }
-  
-  .header-image{
+
+  .header-image {
     height: 40vh;
   }
 
-  .CardsArea{
-    width: 50% !important;  
-    margin: auto;
-
-  }
-
-  .BrandsArea{
-    width: 50% !important;  
+  .CardsArea {
+    width: 50% !important;
     margin: auto;
   }
 
-  .CrouselArea{
-    width: 50% !important;  
+  .BrandsArea {
+    width: 50% !important;
     margin: auto;
   }
 
-  .CardArea2{
-    width: 50% !important;  
+  .CrouselArea {
+    width: 50% !important;
     margin: auto;
   }
 
-  .CarsAvailableCrousel{
-    width: 50% !important;  
-    margin: auto;
-  }
-  .TopWorld{
-    width: 50% !important;  
+  .CardArea2 {
+    width: 50% !important;
     margin: auto;
   }
 
-  .FrequentlyAccordian{
-    width: 50% !important;  
+  .CarsAvailableCrousel {
+    width: 50% !important;
+    margin: auto;
+  }
+  .TopWorld {
+    width: 50% !important;
+    margin: auto;
+  }
+
+  .FrequentlyAccordian {
+    width: 50% !important;
     margin: auto;
     margin-bottom: 20px;
   }
-  
-  .Footer-main{
-    width: 50% !important;  
+
+  .Footer-main {
+    width: 50% !important;
     margin: auto;
   }
 
-  .AvailableArea{
-    width: 50% !important;  
+  .AvailableArea {
+    width: 50% !important;
     margin: auto;
   }
 
-  .AvailableArea-image{
+  .AvailableArea-image {
     height: 40vh;
-
   }
 
-  .manageBooking{
-    width: 50% !important;  
+  .manageBooking {
+    width: 50% !important;
     margin: auto;
   }
 
-  .modalArea{
-    width: 50% !important;  
+  .modalArea {
+    width: 50% !important;
     height: 80%;
     margin: auto;
   }
-  .languageArea{
-    width: 50% !important;  
+  .languageArea {
+    width: 50% !important;
     height: 80%;
     margin: auto;
   }
-  .privacyArea{
-    width: 50% !important;  
+  .privacyArea {
+    width: 50% !important;
     margin: auto;
   }
 
-  .helpArea{
-    width: 50% !important;  
+  .helpArea {
+    width: 50% !important;
     margin: auto;
   }
 
-  .carCardsArea{
-    width: 50% !important;  
+  .carCardsArea {
+    width: 50% !important;
     margin: auto;
   }
 
-  .closeToAirportArea{
-    width: 50% !important;  
+  .closeToAirportArea {
+    width: 50% !important;
     margin: auto;
   }
 
-  .additionalAccordiaArea{
-    width: 50% !important;  
+  .additionalAccordiaArea {
+    width: 50% !important;
     margin: auto;
   }
 }
 
-@media only screen and (min-width: 4608px) and (max-width:6144px)  {
-  .mainHeader{
+@media only screen and (min-width: 4608px) and (max-width: 6144px) {
+  .mainHeader {
     width: 40% !important;
     margin: auto;
-  }      
+  }
 
-  .header-image{
+  .header-image {
     height: 30vh;
   }
-  .CardsArea{
-    width: 40% !important;  
-    margin: auto;
-
-  }
-
-  .BrandsArea{
-    width: 40% !important;  
+  .CardsArea {
+    width: 40% !important;
     margin: auto;
   }
 
-  .CrouselArea{
-    width: 40% !important;  
+  .BrandsArea {
+    width: 40% !important;
     margin: auto;
   }
 
-  .CardArea2{
-    width: 40% !important;  
+  .CrouselArea {
+    width: 40% !important;
     margin: auto;
   }
 
-  .CarsAvailableCrousel{
-    width: 40% !important;  
+  .CardArea2 {
+    width: 40% !important;
     margin: auto;
   }
 
-  .TopWorld{
-    width: 40% !important;  
+  .CarsAvailableCrousel {
+    width: 40% !important;
     margin: auto;
   }
 
-  .FrequentlyAccordian{
-    width: 40% !important;  
+  .TopWorld {
+    width: 40% !important;
+    margin: auto;
+  }
+
+  .FrequentlyAccordian {
+    width: 40% !important;
     margin: auto;
     margin-bottom: 20px;
   }
-  
-  .Footer-main{
-    width: 40% !important;  
+
+  .Footer-main {
+    width: 40% !important;
     margin: auto;
   }
 
-  .AvailableArea{
-    width: 40% !important;  
+  .AvailableArea {
+    width: 40% !important;
     margin: auto;
   }
 
-  .AvailableArea-image{
+  .AvailableArea-image {
     height: 30vh;
-
   }
 
-  .manageBooking{
-    width: 40% !important;  
+  .manageBooking {
+    width: 40% !important;
     margin: auto;
   }
 
-  .modalArea{
-    width: 35% !important;  
+  .modalArea {
+    width: 35% !important;
     height: 80%;
     margin: auto;
   }
 
-  .languageArea{
-    width: 35% !important;  
+  .languageArea {
+    width: 35% !important;
     height: 80%;
     margin: auto;
   }
 
-  .privacyArea{
-    width: 40% !important;  
+  .privacyArea {
+    width: 40% !important;
     margin: auto;
   }
-  .helpArea{
-    width: 40% !important;  
-    margin: auto;
-  }
-
-  .carCardsArea{
-    width: 40% !important;  
+  .helpArea {
+    width: 40% !important;
     margin: auto;
   }
 
-  .closeToAirportArea{
-    width: 40% !important;  
+  .carCardsArea {
+    width: 40% !important;
     margin: auto;
   }
 
-  .additionalAccordiaArea{
-    width: 40% !important;  
+  .closeToAirportArea {
+    width: 40% !important;
+    margin: auto;
+  }
+
+  .additionalAccordiaArea {
+    width: 40% !important;
     margin: auto;
   }
 }
 
-@media only screen and (min-width: 280px) and (max-width:600px)  {
-
-.carCard{
-  display: block;
+@media only screen and (min-width: 280px) and (max-width: 600px) {
+  .carCard {
+    display: block;
+  }
+  .cardsArea {
+    justify-content: center;
+  }
 }
-  .cardsArea{
-    justify-content:center;
+@media only screen and (min-width: 600px) {
+  .cardsArea {
+    padding-left: 0px;
+    justify-content: center;
   }
+
+  .cardsArea {
+    justify-content: center;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+
+.blogCrouselimgbox>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 280px) and (max-width:640px) {
+
+.blogPostMobile{
+  display: flex;
 
 }
-@media only screen and (min-width: 600px)   {
-  .cardsArea{
-    padding-left:0px;
-    justify-content:center;
-
-  }
-
-  .cardsArea{
-    justify-content:center;
-  }
 }
