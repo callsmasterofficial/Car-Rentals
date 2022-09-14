@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from 'next-i18next';
 
 function Brands() {
+  const { t } = useTranslation('common');
   return (
     
     <div className="Brands-outer mt-12 w-[90%] mx-auto lg:w-[80%]  BrandsArea    ">
@@ -8,7 +10,7 @@ function Brands() {
 
       <div>
         <h1 className="text-xl font-bold">
-          Rentalcars.rent connects you to the biggest brands in car hire.
+          {t("bannerHeading")}
         </h1>
       </div>
       <div >

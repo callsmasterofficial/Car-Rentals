@@ -26,6 +26,8 @@ import AvailableArea from "../components/AvailableArea";
 import Carousel from "../components/Carousel";
 import CarsAvailableCardCrousel from "../components/CarsAvailableCardCrousel";
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 export default function Home() {
   return (
     <>
@@ -45,3 +47,9 @@ export default function Home() {
 
   );
 }
+
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+      ...(await serverSideTranslations(locale, ['common']))
+  }
+});
