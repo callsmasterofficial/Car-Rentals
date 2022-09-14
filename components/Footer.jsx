@@ -18,11 +18,14 @@ function Footer() {
             <li className="hover:underline cursor-pointer		 mr-3" onClick={()=>router.push("/Privacy")}>Privacy Notice</li>
           </a>
           <a>
-            <li className="hover:underline mr-3 cursor-pointer	" onClick={()=> setModal(!modal)}>Cookies</li>
+            <li className="hover:underline mr-3 cursor-pointer" onClick={()=> setModal(!modal)}>Cookies</li>
           </a>
           {modal && <Cookies modal={modal} setModal={setModal}/>}
           <a>
             <li className="hover:underline mr-3 cursor-pointer	 " >Terms & Conditions</li>
+          </a>
+          <a>
+            <li className="hover:underline mr-3 cursor-pointer"  onClick={()=>router.push("/blog")}>Blog</li>
           </a>
           <a>
             <li className="hover:underline mr-3 cursor-pointer	" onClick={()=>router.push("/Help")}>Help</li>

@@ -4,7 +4,7 @@ import AccordianCookies from "./AccordianCookies";
 
 function Cookies({ modal, setModal }) {
   return (
-    <>   
+    <>  <div className="overlay">
         <div className="absolute  bg-white shadow-sm shadow-gray-300    h-[100vh] w-[50vw]  item-center  rounded-md p-6 overflow-auto Cookies-mobile ">
         <div className="flex justify-between	border-b-2">
         <div className="mobile-pdding">
@@ -67,6 +67,7 @@ function Cookies({ modal, setModal }) {
           />
         </div>
 
+       </div> 
        </div> 
 
       {/* <div className="flex items-center justify-center w-full mb-12" /> */}

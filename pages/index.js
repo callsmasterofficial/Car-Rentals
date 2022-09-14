@@ -25,6 +25,7 @@ import CarsAvailableCard from "../components/CarsAvailableCard";
 import AvailableArea from "../components/AvailableArea";
 import Carousel from "../components/Carousel";
 import CarsAvailableCardCrousel from "../components/CarsAvailableCardCrousel";
+import BlogCard from "../components/BlogCard";
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
