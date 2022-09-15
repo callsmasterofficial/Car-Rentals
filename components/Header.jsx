@@ -7,6 +7,7 @@ import Hamburger from './Icons/Hamburger'
 import HamburgerMenu from './HamburgerMenu'
 import MobileModal from './MobileModal'
 import MobileLanguage from './MobileLanguage'
+
 function Header({location}) {
   const [modal, setModal] = useState("");
   

@@ -1,4 +1,77 @@
 {
+    "searchAreaHeaderHeading":"Rental Cars - Search,Compare & Save",
+    "searchAreaCheckbox1":"Drop car off at different location",
+    "searchAreaCheckbox2":"Driver aged 30-65?",
+    "searchAreaDriverAge":"Driver's age",
+    "searchAreaPickUp":"Pick-up-Location",
+    "searchAreaDropOff":"Drop-off-Location",
+    "searchAreaPickUpDate":"Pick-up-Date",
+    "searchAreaPickUpTime":"Pick-up-Time",
+    "searchAreaDropOffDate":"Drop-off-Date",
+    "searchAreaDropOffTime":"Drop-off-Time",
+    "searchAreaSearch":"Search",
+    "bannerCaption1":"Free Cancellations on most bookings",
+    "bannerCaption2":"60,000+ locations",
+    "bannerCaption3":"Customer support in 40+ languages",
     "bannerHeading":"CarRental.Rent connects you to the biggest brands in car hire.",
-    "bannerCaption1":"Free Cancellations on most bookings"
+    
+    "crouselRecommendedNextTrip":"Recommended Next Trip",
+
+    "cardHeading1":"Flexible rentals",
+    "cardData1":"Cancel or change most bookings for free up to 48 hours before pick-up",
+    "cardFind":"Find out more",
+    "cardHeading2":"No hidden fees",
+    "cardData2":"Know exactly what you’re paying",
+    "cardHeading3":"Price Match Guarantee",
+    "cardData3":"Found the same deal for less? We’ll match the price.",
+
+    "cardsAreaHeading1":"Clean cars. Flexible bookings. Socially distant rental counters.",
+    "cardsAreaData1":"We’re working with our partners to keep you safe and in the driving seat.",
+    "cardsAreaFind":"Find out more",
+    "cardsAreaHeading2":"Clean cars. Flexible bookings. Socially distant rental counters.",
+    "cardsAreaEmail":"Email address",
+    "cardsAreaSignUp":"Sign me up!",
+
+    "carsAvailableCardCrouselHeading":"Cars Available",
+    "carsAvailableCardCrouselCard1":"Vauxhall Corsa",
+    "carsAvailableCardCrouselCard2":"Ford Focus",
+    "carsAvailableCardCrouselCard3":"Hyundai i30",
+    "carsAvailableCardCrouselCard4":"Fiat 500",
+    "carsAvailableCardCrouselCard5":"Ford Mondeo",
+    "carsAvailableCardCrouselCard6":"volkswagen passat",
+
+    "availableAreaHeading":"We are always available for you!",
+    "availableAreaData1":"We are one of the most finest and comfortable car rental company available in the Gurgaon. We believe in client satisfaction and our working module is for that.",
+    "availableAreaGetInTouch":"Get in Touch",
+    "availableAreaData2":"We Will make your travel Fun.",
+    "availableAreaGoogle1":"GET IT ON",
+    "availableAreaGoogle2":"Google Play",
+    "availableAreaAppStore1":"DownLoad on the",
+    "availableAreaAppStore2":"App Store",
+
+
+    "FooterHeading1":"Privacy Notice",
+    "FooterHeading2":"Cookies",
+    "FooterHeading3":"Terms & Conditions",
+    "FooterHeading4":"Blog",
+    "FooterHeading5":"Help",
+    "FooterHeading6":"Modern Slavery Statement",
+    "FooterHeading7":"Supply Partner Enquiry and Marketplace",
+    "FooterHeading8":"Affiliated Programme",
+    "FooterHeading9":"Careers",
+
+
+    "FooterText1":"Rentalcars.rent is a limited company registered in England and Wales (Number: 05179829) whose registered address is at 100 New Bridge Street, London, EC4V 6JA. VAT number: GB 855349007.",
+    "FooterText2":"Rentalcars.rent Inc., the world leader in online travel & related services.",
+    "FooterText3":"Copyright © 2022 Rentalcars.rent .All rights reserved",
+
+
+
+
+
+
+
+
+
+    "SearchAreaHeading1":""
 }

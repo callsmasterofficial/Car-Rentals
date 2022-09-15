@@ -7,8 +7,12 @@ import RightArrowIcon from './Icons/RightArrowIcon';
 import LeftArrowIcon from './Icons/LeftArrowIcon';
 import NextTripArea from "./NextTripArea"
 import Data from "./NextTripConst"
+import { useTranslation } from 'next-i18next';
+
 
 export default function Carousel() {
+  const { t } = useTranslation('common');
+
   const options = {
     dots: true,
     infinite: true,
@@ -49,7 +53,7 @@ export default function Carousel() {
     <div className="mt-12 w-[90%] mx-auto lg:w-[80%] CrouselArea">
 
       <div className="Crousal-heading flex justify-between">
-        <h2 className="text-center text-lg font-bold my-3">Recommended Next Trip </h2>
+        <h2 className="text-center text-lg font-bold my-3">{t("crouselRecommendedNextTrip")}</h2>
         <div className="button-style flex justify-end	">
         <div className="previous">
           <button className="Crousal-button my-3" onClick={() => buttonRef.current.slickPrev()}>

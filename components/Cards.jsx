@@ -1,8 +1,10 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 function Cards() {
+  const { t } = useTranslation("common");
+
   return (
-    
     <div className="mt-12 lg:grid grid-cols-6 lg:mb-5 lg:mt-20 w-[90%] mx-auto lg:w-[80%] border border-gray-200 rounded-lg CardsArea">
       <div className="col-span-2 mt-5">
         <div className="flex">
@@ -15,13 +17,10 @@ function Cards() {
           </div>
 
           <div className="col-span-1 p-2">
-            <h1 className="text-xl font-bold">Flexible rentals</h1>
-            <p className="text-[16px] my-2">
-              Cancel or change most bookings for free up to 48 hours before
-              pick-up
-            </p>
+            <h1 className="text-xl font-bold">{t("cardHeading1")}</h1>
+            <p className="text-[16px] my-2">{t("cardData1")}</p>
             <p className=" hover:underline text-blue-500 cursor-pointer text-[16px] ">
-              Find out more
+              {t("cardFind")}
             </p>
           </div>
         </div>
@@ -37,9 +36,9 @@ function Cards() {
           </div>
 
           <div className="col-span-1 p-2">
-            <h1 className="text-xl font-bold">No hidden fees</h1>
+            <h1 className="text-xl font-bold">{t("cardHeading2")}</h1>
             <div>
-              <p className="text-[16px] my-2">Know exactly what you’re paying</p>
+              <p className="text-[16px] my-2">{t("cardData2")}</p>
             </div>
           </div>
         </div>
@@ -55,11 +54,9 @@ function Cards() {
           </div>
 
           <div className="col-span-1 p-2">
-            <h1 className="text-xl font-bold">Price Match Guarantee</h1>
+            <h1 className="text-xl font-bold">{t("cardHeading3")}</h1>
             <div>
-              <p className="text-[16px] my-2">
-                Found the same deal for less? We’ll match the price.
-              </p>
+              <p className="text-[16px] my-2">{t("cardData3")}</p>
             </div>
           </div>
         </div>

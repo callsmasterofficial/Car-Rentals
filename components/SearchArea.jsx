@@ -5,8 +5,12 @@ import Time from "./Icons/Time";
 import Check from "./Icons/Check";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useTranslation } from 'next-i18next';
+
 
 function SearchArea({ location }) {
+  const { t } = useTranslation('common');
+
   const [driverAge, setDriverAge] = useState(false);
   const [dropOff, setdropOff] = useState(false);
   const [startDate, setStartDate] = useState(new Date());
@@ -29,7 +33,8 @@ function SearchArea({ location }) {
       <div className="mx-auto SearchArea-width  ">
         <div>
           <h1 className="text-white font-bold	text-3xl mobile-pdding header-heading">
-            Rental Cars - Search, Compare and Save
+          {t("searchAreaHeaderHeading")}
+
           </h1>
         </div>
         <div className="flex">
@@ -41,7 +46,7 @@ function SearchArea({ location }) {
             />
             <label className="text-white">
               {" "}
-              Drop car off at different location
+              {t("searchAresaCheckbox1")}
             </label>
             <br></br>
           </div>
@@ -52,11 +57,11 @@ function SearchArea({ location }) {
               className="w-[15px] h-[15px]"
               onClick={() => setDriverAge(!driverAge)}
             />
-            <label className="text-white ml-1">Driver aged 30-65?</label>
+            <label className="text-white ml-1">{t("searchAreaCheckbox2")}</label>
             <br></br>
             {driverAge && (
               <div className="driverAge">
-                <label className="text-white ml-5">Driver&apos;s age</label>
+                <label className="text-white ml-5">{t("searchAreaDriverAge")}</label>
 
                 <input
                   type="number"
@@ -72,11 +77,11 @@ function SearchArea({ location }) {
               <input
                 type="text"
                 className="form-control  pl-8  w-[100%] SearchArea outline-none pt-[14px]"
-                placeholder="Pick-up Location"
+                placeholder={t("searchAreaPickUp")}
                 value={location ? location : ""}
               ></input>
               <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
-                Pick-up-Location
+              {t("searchAreaPickUp")}
               </label>
             </div>
             <Search SearchIcon={SearchiconStyle} />
@@ -88,10 +93,10 @@ function SearchArea({ location }) {
                 <input
                   type="text"
                   className="form-control   px-8  w-[100%] SearchArea outline-none pt-[14px]"
-                  placeholder="Drop-off Location"
+                  placeholder={t("searchAreaDropOff")}
                 ></input>
                 <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
-                  Pick-up-Location
+                  {t("searchAreaDropOff")}
                 </label>
               </div>
               <Search SearchIcon={SearchiconStyle} />
@@ -115,7 +120,7 @@ function SearchArea({ location }) {
                   endDate={endDate}
                 />
                 <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
-                  Pick-up-Date
+                  {t("searchAreaPickUpDate")}
                 </label>
               </div>
               <Calender CalenderIcon={CalendericonStyle} className="mt-[5px]" />
@@ -139,7 +144,7 @@ function SearchArea({ location }) {
                   dateFormat="h:mm aa"
                 />
                 <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
-                  Pick-up-Time
+                {t("searchAreaPickUpTime")}
                 </label>
               </div>
               <Time TimeIcon={TimeIconStyle} />
@@ -164,7 +169,7 @@ function SearchArea({ location }) {
                   minDate={startDate}
                 />
                 <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
-                  Drop-off-Date
+                {t("searchAreaDropOffDate")}
                 </label>
               </div>
               <Calender CalenderIcon={CalendericonStyle} />
@@ -187,7 +192,7 @@ function SearchArea({ location }) {
                 />
 
                 <label className="absolute text-[14px]  font-bold top-0  left-0 text-center pr-1  text-gray-500 ml-[10px]">
-                  Drop-off Time
+                {t("searchAreaDropOffTime")}
                 </label>
               </div>
               <div></div>
@@ -200,7 +205,8 @@ function SearchArea({ location }) {
               type="submit"
               className="btn btn-primary text-white bg-green-700   hover:bg-[#0d6521]  px-8  w-[100%] SearchArea"
             >
-              Search
+            {t("searchAreaSearch")}
+
             </button>
           </div>
         </div>
@@ -211,11 +217,11 @@ function SearchArea({ location }) {
               className="w-[15px] h-[15px]"
               onClick={() => setDriverAge(!driverAge)}
             />
-            <label className="text-white ml-1">Driver aged 30-65?</label>
+            <label className="text-white ml-1">{t("searchAreaCheckbox2")}</label>
             <br></br>
             {driverAge && (
               <div className="driverAge">
-                <label className="text-white ml-5">Driver&apos;s age</label>
+                <label className="text-white ml-5">{t("searchAreaDriverAge")}</label>
 
                 <input
                   type="number" 
@@ -230,15 +236,15 @@ function SearchArea({ location }) {
           <ul className="text-white flex-col justify-center  sm:items-center lg:justify-evenly flex lg:flex-row w-[100%] ">
             <li className="flex items-center ">
               <Check CheckIcon={CheckIconStyle} />
-              Free Cancellations on most bookings
+              {t("bannerCaption1")}
             </li>
             <li className="flex 	">
               <Check CheckIcon={CheckIconStyle} />
-              60,000+ locations
+              {t("bannerCaption2")}
             </li>
             <li className="flex  items-center">
               <Check CheckIcon={CheckIconStyle} />
-              Customer support in 40+ languages
+              {t("bannerCaption3")}
             </li>
           </ul>
         </div>

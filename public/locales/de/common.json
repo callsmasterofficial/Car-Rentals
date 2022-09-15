@@ -1,4 +1,73 @@
-{
+{    
+    "searchAreaHeaderHeading":"Mietwagen - Suchen, Vergleichen & Sparen",
+    "searchAreaCheckbox1":"Fahrzeug an anderer Stelle abstellen",
+    "searchAreaCheckbox2":"Fahrer im Alter von 30-65?",
+    "searchAreaDriverAge":"Alter des Fahrers",
+    "searchAreaPickUp":"Treffpunkt",
+    "searchAreaDropOff":"Rückgabestation",
+    "searchAreaPickUpDate":"Abholdatum",
+    "searchAreaPickUpTime":"Abholzeit",
+    "searchAreaDropOffDate":"Abgabedatum",
+    "searchAreaDropOffTime":"Abgabezeit",
+    "searchAreaSearch":"Suche",
+    "bannerCaption1":"Kostenlose Stornierungen für die meisten Buchungen",
+    "bannerCaption2":"Über 60.000 Standorte",
+    "bannerCaption3":"Kundensupport in über 40 Sprachen",
     "bannerHeading":"CarRental.Rent verbindet Sie mit den größten Marken der Autovermietung",
-    "bannerCaption1":"Kostenlose Stornierungen für die meisten Buchungen"
+
+
+    "cardHeading1":"Flexible Mieten",
+    "cardData1":"Stornieren oder ändern Sie die meisten Buchungen bis zu 48 Stunden vor der Abholung kostenlos",
+    "cardFind":"Finde mehr heraus",
+    "cardHeading2":"Keine versteckten Gebühren",
+    "cardData2":"Wissen Sie genau, was Sie bezahlen",
+    "cardHeading3":"Preisgarantie",
+    "cardData3":"Gleiches Angebot günstiger gefunden? Wir passen den Preis an.",
+
+
+    "cardsAreaHeading1":"Saubere Autos. Flexible Buchungen. Sozial entfernte Mietschalter.",
+    "cardsAreaData1":"Wir arbeiten mit unseren Partnern zusammen, um Sie sicher und auf dem Fahrersitz zu halten.",
+    "cardsAreaFind":"Finde mehr heraus",
+    "cardsAreaHeading2":"Saubere Autos. Flexible Buchungen. Sozial entfernte Mietschalter.",
+    "cardsAreaEmail":"E-Mail-Addresse",
+    "cardsAreaSignUp":"Melden Sie mich an!",
+
+
+    "carsAvailableCardCrouselHeading":"Autos verfügbar",
+    "carsAvailableCardCrouselCard1":"Opel Corsa",
+    "carsAvailableCardCrouselCard2":"Ford Focus",
+    "carsAvailableCardCrouselCard3":"Hyundai i30",
+    "carsAvailableCardCrouselCard4":"Fiat 500",
+    "carsAvailableCardCrouselCard5":"Ford Mondeo",
+    "carsAvailableCardCrouselCard6":"volkswagen passat",
+
+    "availableAreaHeading":"Wir sind immer für Sie erreichbar!",
+    "availableAreaData1":"Wir sind eine der besten und komfortabelsten Autovermietungen in Gurgaon. Wir glauben an die Kundenzufriedenheit und unser Arbeitsmodul ist dafür da.",
+    "availableAreaGetInTouch":"In Kontakt kommen",
+    "availableAreaData2":"Wir werden Ihre Reise zum Vergnügen machen.",
+    "availableAreaGoogle1":"ERLEBE ES",
+    "availableAreaGoogle2":"Google Play",
+    "availableAreaAppStore1":"Download auf der",
+    "availableAreaAppStore2":"App Store",
+
+    "FooterHeading1":"Datenschutzerklärung",
+    "FooterHeading2":"Kekse",
+    "FooterHeading3":"Terms & Bedingungen",
+    "FooterHeading4":"Bloggen",
+    "FooterHeading5":"Hilfe",
+    "FooterHeading6":"Erklärung zur modernen Sklaverei",
+    "FooterHeading7":"Lieferpartneranfrage und Marktplatz",
+    "FooterHeading8":"Verbundenes Programm",
+    "FooterHeading9":"Karriere",
+
+
+
+    "FooterText1":"Rentalcars.rent ist eine in England und Wales eingetragene Gesellschaft mit beschränkter Haftung (Nummer: 05179829) mit eingetragener Adresse in 100 New Bridge Street, London, EC4V 6JA. Umsatzsteuer-Identifikationsnummer: GB 855349007.",
+    "FooterText2":"Rentalcars.rent Inc., der weltweit führende Anbieter von Online-Reisen und damit verbundenen Dienstleistungen.",
+    "FooterText3":"Copyright © 2022 Rentalcars.rent. Alle Rechte vorbehalten",
+
+
+    "crouselRecommendedNextTrip":"Empfohlene nächste Reise"
+
+
 }

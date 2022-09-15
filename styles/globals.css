@@ -294,8 +294,10 @@ input:checked ~ .dot {
 @media only screen and (min-width: 280px) and (max-width: 640px) {
   .Cookies-mobile {
     width: 100%;
+    height: 100vh;;
   }
 }
+
 
 .select-option {
   width: 100%;
@@ -323,6 +325,21 @@ input:checked ~ .dot {
     margin-top: 2px;
   }
 }
+@media only screen and (min-width: 640px){
+
+.Cookies{
+  transform: translateX(50%);
+margin-top: 10px;
+}
+}
+
+@media only screen and (min-width: 640px){
+
+  .Language{
+    transform: translateX(50%);
+  margin-top: 10px;
+  }
+  }
 
 @media only screen and (min-width: 280px) and (max-width: 639px) {
   .AvailableArea-SubHeading-mobile {
@@ -342,6 +359,7 @@ input:checked ~ .dot {
     height: auto;
   }
 }
+
 
 @media only screen and (min-width: 400px) and (max-width: 640px) {
   .AvailableArea-image-mobile {
