@@ -1,25 +1,28 @@
 import React from "react";
 import AppleLogo from "./Icons/AppleLogo";
+import { useTranslation } from 'next-i18next';
+
 
 function AvailableArea() {
+  const { t } = useTranslation('common');
+
   return (
     <div className="Available-image AvailableArea-image-mobile opacity-90 mt-12	relative AvailableArea-image ">
       <div className="mt-20px w-[90%] mx-auto lg:w-[80%] p-[2rem] mb-2 AvailableArea">
         <h1 className="text-5xl font-bold text-white text-center mt-6 AvailableArea-Heading-mobile">
-          We are always available for you!
+        {t("availableAreaHeading")}
         </h1>
         <p className="text-white text-center mt-6 text-xl AvailableArea-SubHeading-mobile ">
-          We are one of the most finest and comfortable car rental company
-          available in the Gurgaon. We believe in client satisfaction and our
-          working module is for that.
+        {t("availableAreaData1")}
+
         </p>
         <div className="text-center mt-6 cursor-pointer	 ">
           <botton className="text-white p-2 sm:p-4 w-[30%] bg-blue-600 hover:bg-blue-800 rounded text-center">
-            Get in Touch
+          {t("availableAreaGetInTouch")}
           </botton>
         </div>
         <p className="text-gray-300 text-center mt-6 ">
-          WE will make your travel fun.
+        {t("availableAreaData2")}
         </p>
         {/* <div className="text-center mt-6 ">
           <botton className="text-white p-2  bg-black rounded text-center">
@@ -45,8 +48,8 @@ function AvailableArea() {
               ></path>
             </svg>
             <span className="ml-4 flex items-start flex-col leading-none ">
-              <span className="text-xs mb-1 ">GET IT ON</span>
-              <span className="title-font font-medium ">Google Play</span>
+              <span className="text-xs mb-1 ">{t("availableAreaGoogle1")}</span>
+              <span className="title-font font-medium ">{t("availableAreaGoogle2")}</span>
             </span>
           </button>
           <button className="bg-black text-white inline-flex py-1 px-2 sm:py-3 sm:px-5  rounded-lg items-center ml-2 focus:outline-none Availaible-mobile-button2 ">
@@ -64,8 +67,8 @@ function AvailableArea() {
               <path d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z "></path>
             </svg>
             <span className="ml-4 flex items-start flex-col leading-none ">
-              <span className="text-xs mb-1 ">Download on the</span>
-              <span className="title-font font-medium ">App Store</span>
+              <span className="text-xs mb-1 ">{t("availableAreaAppStore1")}</span>
+              <span className="title-font font-medium ">{t("availableAreaAppStore2")}</span>
             </span>
           </button>
         </div>

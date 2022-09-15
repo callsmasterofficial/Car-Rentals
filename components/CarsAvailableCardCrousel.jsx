@@ -8,8 +8,12 @@ import LeftArrowIcon from "./Icons/LeftArrowIcon";
 import CarsAvailableCard from "./CarsAvailableCard";
 // import NextTripArea from "./NextTripArea"
 // import Data from "./NextTripConst"
+import { useTranslation } from 'next-i18next';
+
 
 export default function CarsAvailableCardCrousel() {
+  const { t } = useTranslation('common');
+
   const options = {
     dots: true,
     infinite: true,
@@ -50,7 +54,7 @@ export default function CarsAvailableCardCrousel() {
       <div className="mt-12 w-[90%] mx-auto lg:w-[80%] CarsAvailableCrousel">
         <div className="Crousal-heading flex justify-between ">
           <h2 className="text-center text-lg font-bold my-3">
-            Cars Available{" "}
+          {t("carsAvailableCardCrouselHeading")}{" "}
           </h2>
           <div className="button-style flex justify-end	">
             <div className="previous">

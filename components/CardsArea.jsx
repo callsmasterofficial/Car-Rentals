@@ -1,8 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'next-i18next';
+
 
 
 
 function CardsArea() {
+  const { t } = useTranslation('common');
+
   return (
     <div className="lg:grid lg:grid-cols-4 mb-5 mt-12 cards-area w-[90%] mx-auto lg:w-[80%] CardArea2">
       <div className="col-span-2 mt-5 border border-gray-200 rounded-lg lg:mr-6">
@@ -14,13 +18,13 @@ function CardsArea() {
        
        <div className='col-span-1 p-4'>
         <h1 className="text-xl font-bold">
-        Clean cars. Flexible bookings. Socially distant rental counters.
+        {t("cardsAreaHeading1")}
         </h1>
         <p className="text-[16px] my-2">
-        We’re working with our partners to keep you safe and in the driving seat.
+        {t("cardsAreaData1")}
         </p>
         <p className=" hover:underline text-blue-500 cursor-pointer text-[16px]">
-        Find out more
+        {t("cardsAreaFind")}
         </p>
        </div>
        </div>
@@ -34,11 +38,11 @@ function CardsArea() {
        
        <div className='col-span-1 p-1 sm:p-4'>
         <h1 className="text-xl font-bold">
-        Clean cars. Flexible bookings. Socially distant rental counters.
+        {t("cardsAreaHeading2")}
         </h1>
         <div className=" sm:my-2 my-1">
-        <input type="text" className="form-control border border-gray-500 rounded-sm sm:p-2 mt-2 p-2 w-[180px]" placeholder="Email address"></input>
-       <button type="submit" className="btn btn-primary text-white bg-green-700 border rounded-md hover:bg-green-800 ml-8 p-2 mt-2 cursor-pointer	">Sign me up!</button>
+        <input type="text" className="form-control border border-gray-500 rounded-sm sm:p-2 mt-2 p-2 w-[180px]" placeholder={("cardsAreaEmail")}></input>
+       <button type="submit" className="btn btn-primary text-white bg-green-700 border rounded-md hover:bg-green-800 ml-8 p-2 mt-2 cursor-pointer	">{("cardsAreaSignUp")}</button>
         </div>
        </div>
        </div>

@@ -4,72 +4,79 @@ import AccordianCookies from "./AccordianCookies";
 
 function Cookies({ modal, setModal }) {
   return (
-    <>  <div className="overlay">
-        <div className="absolute  bg-white shadow-sm shadow-gray-300    h-[100vh] w-[50vw]  item-center  rounded-md p-6 overflow-auto Cookies-mobile ">
-        <div className="flex justify-between	border-b-2">
-        <div className="mobile-pdding">
-          <img
-            className="header-icon w-[120px] h-[40px] "
-            src="https://cdn.cookielaw.org/logos/static/ot_logo.png"
-          />
-        </div>
-        <div
-            className="text-black h-6 w-6 hover:bg-gray-300 flex items-center justify-center rounded-sm cursor-pointer"
-            onClick={() => setModal("")}
-          >
-            <span>{"X"}</span>
-          </div>
-        {/* <div className="header-icon">
+    <>
+      {" "}
+      <div className="overlay">
+        <div className="mx-auto my-auto">
+        <div className="absolute  bg-white shadow-sm shadow-gray-300  Cookies  sm:h-[90vh] sm:w-[50vw]  item-center  rounded-md p-4 overflow-auto Cookies-mobile ">
+          <div className="flex justify-between	border-b-2">
+            <div className="mobile-pdding">
+              <img
+                className="header-icon w-[120px] h-[40px] "
+                src="https://cdn.cookielaw.org/logos/static/ot_logo.png"
+              />
+            </div>
+            <div
+              className="text-black h-6 w-6 hover:bg-gray-300 flex items-center justify-center rounded-sm cursor-pointer"
+              onClick={() => setModal("")}
+            >
+              <span>{"X"}</span>
+            </div>
+            {/* <div className="header-icon">
           <Cross />
         </div> */}
-      </div>
+          </div>
 
-        <div>
-          <h1 className="font-bold text-black">Privacy Preference Center</h1>
-          <p className="text-black">
-            When you visit a website, it can retrieve or store information about
-            your browser. This usually takes the form of cookies. This can be
-            information about you, your settings or your device. The information
-            is mostly used to ensure that the website works as expected. This
-            information does not normally identify you directly. However, this
-            can offer you a more personalized web experience. Because we respect
-            your right to privacy, you can choose not to allow certain types of
-            cookies. Click on the different category headings to learn more and
-            change our default settings. Further information
-          </p>
-        </div>
+          <div>
+            <h1 className="font-bold text-black">Privacy Preference Center</h1>
+            <p className="text-black">
+              When you visit a website, it can retrieve or store information
+              about your browser. This usually takes the form of cookies. This
+              can be information about you, your settings or your device. The
+              information is mostly used to ensure that the website works as
+              expected. This information does not normally identify you
+              directly. However, this can offer you a more personalized web
+              experience. Because we respect your right to privacy, you can
+              choose not to allow certain types of cookies. Click on the
+              different category headings to learn more and change our default
+              settings. Further information
+            </p>
+          </div>
 
-        <div>
-          <h1 className="font-bold text-black">Manage Consent Preferences</h1>
-        </div>
+          <div>
+            <h1 className="font-bold text-black">Manage Consent Preferences</h1>
+          </div>
 
-        <div className="col-span-2 mt-5 border border-gray-600 rounded-lg mb-auto lg:mr-6 text-black">
-          <div className="m-3">
-            <h1 className="font-bold p-3 divide-y">
-              Frequently Asked Questions
-            </h1>
-            <div className="accordion  divide-y">
-              {accordionData.map(({ title, content,ind }) => (
-                <AccordianCookies title={title} content={content} key={`Cookies${ind}`}/>
-              ))}
+          <div className="col-span-2 mt-5 border border-gray-600 rounded-lg mb-auto lg:mr-6 text-black">
+            <div className="m-3">
+              <h1 className="font-bold p-3 divide-y">
+                Frequently Asked Questions
+              </h1>
+              <div className="accordion  divide-y">
+                {accordionData.map(({ title, content, ind }) => (
+                  <AccordianCookies
+                    title={title}
+                    content={content}
+                    key={`Cookies${ind}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
+          <div className="flex justify-end m-5">
+            <button className="bg-green-600 text-white p-2">
+              Confirm my Choice
+            </button>
+          </div>
+          <div className="bg-gray-300 h-6 flex justify-end">
+            <img
+              className="p-1 pl-5"
+              src="https://cdn.cookielaw.org/logos/static/poweredBy_ot_logo.svg"
+            />
+          </div>
         </div>
-        <div className="flex justify-end m-5">
-          <button className="bg-green-600 text-white p-2">
-            Confirm my Choice
-          </button>
         </div>
-        <div className="bg-gray-300 h-6 flex justify-end">
-          <img
-            className="p-1 pl-5"
-            src="https://cdn.cookielaw.org/logos/static/poweredBy_ot_logo.svg"
-          />
-        </div>
-
-       </div> 
-       </div> 
-
+      </div>
       {/* <div className="flex items-center justify-center w-full mb-12" /> */}
       {/*   
     <div className="relative">
@@ -79,7 +86,6 @@ function Cookies({ modal, setModal }) {
 
       </div>
     </div> */}
-
       {/* <label
         for="checked-toggle"
         className="inline-flex relative items-center cursor-pointer"
@@ -113,5 +119,4 @@ const accordionData = [
     title: "markeing Cookies",
     content: `This site and our trusted partners also use third-party cookies. These cookies are used to display personalized advertising both on this website and on other websites. This advertising is based on your browsing behavior such as the accommodations and prices you have seen. These cookies are also used to enable social media features on our site, such as liking and sharing pages and products on social media platforms.`,
   },
-  
 ];
