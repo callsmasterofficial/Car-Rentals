@@ -27,30 +27,29 @@ import Carousel from "../components/Carousel";
 import CarsAvailableCardCrousel from "../components/CarsAvailableCardCrousel";
 import BlogCard from "../components/BlogCard";
 
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Home() {
   return (
     <>
       <Header />
       <Brands />
-      <Carousel/>
+      <Carousel />
       <Cards />
       <CardsArea />
       {/* <NextTripArea /> */}
       {/* <CarsAvailableCard /> */}
-      <CarsAvailableCardCrousel/>
-      <TopWorldArea/>
-       <AvailableArea />
+      <CarsAvailableCardCrousel />
+      <TopWorldArea />
+      <AvailableArea />
       <FrequentlyAccordian />
-      <Footer /> 
+      <Footer />
     </>
-
   );
 }
 
 export const getServerSideProps = async ({ locale }) => ({
   props: {
-      ...(await serverSideTranslations(locale, ['common']))
-  }
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
 });

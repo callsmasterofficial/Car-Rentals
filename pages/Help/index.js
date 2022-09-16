@@ -3,6 +3,8 @@ import HelpCard from "../../components/HelpCard";
 import FrequentlyAskedQuestions from "../../components/FrequentlyAskedQuestions";
 import ChatArea from "../../components/ChatArea";
 import HelpIndex from "../../components/HelpIndex";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 
 function index() {
 
@@ -19,4 +21,9 @@ function index() {
   );
 }
 
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 export default index;

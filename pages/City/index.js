@@ -8,6 +8,8 @@ import Header from "../../components/Header";
 import TopWorldArea from "../../components/TopWorldArea";
 import CarCard from "../../components/CarCard";
 import CloseToAirportArea from '../../components/CloseToAirportArea';
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 
 
 function index() {
@@ -28,4 +30,9 @@ function index() {
   )
 }
 
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 export default index

@@ -9,6 +9,9 @@ import TopWorldArea from "../components/TopWorldArea";
 import CarCard from "../components/CarCard";
 import CloseToAirportArea from '../components/CloseToAirportArea';
 
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+
 export async function getStaticPaths() {
     
       return {
@@ -60,4 +63,9 @@ function index({slug}) {
   )
 }
 
+// export const getServerSideProps = async ({ locale }) => ({
+//   props: {
+//     ...(await serverSideTranslations(locale, ["common"])),
+//   },
+// });
 export default index
