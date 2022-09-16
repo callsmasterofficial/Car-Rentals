@@ -5,6 +5,10 @@ import Play from '../../components/Play'
 import Language from "../../components/Language"
 import HelpIndex from '../../components/HelpIndex'
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+
+
 function index() {
 
   return (
@@ -17,5 +21,9 @@ function index() {
     </>
   )
 }
-
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 export default index

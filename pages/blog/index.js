@@ -9,6 +9,8 @@ import BlogThreeCards from "../../components/BlogThreeCards";
 import Footer from "../../components/Footer";
 
 import HelpIndex from "../../components/HelpIndex";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 
 function index() {
   return (
@@ -25,5 +27,10 @@ function index() {
     </>
   );
 }
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 
 export default index;
