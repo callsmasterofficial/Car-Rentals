@@ -15,6 +15,8 @@ function Modal({setModal}) {
 
      
 
+     
+
       <div className="topCurrencies p-2 font-semibold text-black">
         <p>Top Currencies</p>
       </div>
