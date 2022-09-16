@@ -1,9 +1,15 @@
 import React from "react";
 
 function Language({ modal, setModal }) {
+  
+  // function off() {
+  //   document.body.style.display = "none";
+  // }
+  // onclick={()=>off()}
+
   return (
     <>
-    <div className="overlay">
+    <div className="overlay " onclick={()=>off()}>
       <div className="absolute top-12 bg-white hidden sm:block sm:ml-[5px]  h-[91vh] w-[50vw]  ml-[445px] Language  rounded-md p-4 overflow-auto languageArea">
         {/* <div>
         <h1 className="font-bold border-b-2 py-4">Choose a Language</h1>
@@ -19,7 +25,7 @@ function Language({ modal, setModal }) {
           </div>
         </div>
 
-        <div className=" grid grid-cols-4">
+        <div className=" lg:grid lg:grid-cols-4 grid grid-cols-2">
           {languageData.map((data,index) => {
             return (
               <div className="flex p-3 w-[100%] hover:bg-gray-200"  key={`Language${index}`}>
