@@ -9,7 +9,7 @@ function Language({ modal, setModal }) {
 
   return (
     <>
-    <div className="overlay " onclick={()=>off()}>
+    <div className="overlay ">
       <div className="absolute top-12 bg-white hidden sm:block sm:ml-[5px]  h-[91vh] w-[50vw]  ml-[445px] Language  rounded-md p-4 overflow-auto languageArea">
         {/* <div>
         <h1 className="font-bold border-b-2 py-4">Choose a Language</h1>
