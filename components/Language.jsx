@@ -1,6 +1,14 @@
 import React from "react";
 
 function Language({ modal, setModal }) {
+  
+  // function off() {
+  //   document.body.style.display = "none";
+  // }
+  // onclick={()=>off()}
+
+
+  
   return (
     <>
     <div className="overlay">
@@ -19,7 +27,7 @@ function Language({ modal, setModal }) {
           </div>
         </div>
 
-        <div className=" grid grid-cols-4">
+        <div className=" lg:grid lg:grid-cols-4 grid grid-cols-2">
           {languageData.map((data,index) => {
             return (
               <div className="flex p-3 w-[100%] hover:bg-gray-200"  key={`Language${index}`}>

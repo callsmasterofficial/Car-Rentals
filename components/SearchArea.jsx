@@ -46,7 +46,7 @@ function SearchArea({ location }) {
             />
             <label className="text-white">
               {" "}
-              {t("searchAresaCheckbox1")}
+              {t("searchAreaCheckbox1")}
             </label>
             <br></br>
           </div>

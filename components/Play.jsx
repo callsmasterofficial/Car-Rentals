@@ -4,6 +4,7 @@ import Cross from "./Icons/Cross"
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next';
+import { useEffect } from "react";
 
 
 function Play({modal, setModal }) {
@@ -11,7 +12,15 @@ function Play({modal, setModal }) {
 
   const router = useRouter()
   // const [isActive, setIsActive] = useState(false);
-   
+  useEffect(()=>{    
+      if(modal == "language"){
+        document.body.style.overflow = "hidden"
+      }else{
+        document.body.style.overflow = "scroll"
+      }
+  }, [modal])
+  
+  
   return (  
     <div className="flex justify-between mx-auto  ">
       <div className="mobile-pdding">
@@ -31,7 +40,7 @@ function Play({modal, setModal }) {
 
         </div>
         <div className="Header-Hamburger">
-        <button className="p-2" onClick={() => setModal("language")}>
+        <button className="p-2" onClick={()=> setModal("language")}>
             <img className="rounded-full w-5"
              src="https://cf.bstatic.com/static/img/flags/new/48-squared/gb.png" ></img>
         </button>
