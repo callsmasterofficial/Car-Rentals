@@ -11,7 +11,7 @@ function Cards() {
           <div className="col-span-1 p-2">
             <img
               className="max-w-none"
-              src="https://cdn2.rcstatic.com/com.rentalcars.185492029745.eu-west-1.web.prod.static-live/images/landing-pages/usps/desktop/usp_calendar@1x.png"
+              src="./Images/Flexible-rentals.png"
               alt="Imge Not Found"
             />
           </div>
@@ -30,7 +30,7 @@ function Cards() {
           <div className="col-span-1 p-2">
             <img
               className="max-w-none"
-              src="https://cdn2.rcstatic.com/com.rentalcars.185492029745.eu-west-1.web.prod.static-live/images/landing-pages/usps/desktop/usp_magnifier@1x.png"
+              src="./Images/No-hidden-fees.png"
               alt="Imge Not Found"
             />
           </div>
@@ -48,7 +48,7 @@ function Cards() {
           <div className="col-span-1 p-2">
             <img
               className="max-w-none"
-              src="https://cdn2.rcstatic.com/com.rentalcars.185492029745.eu-west-1.web.prod.static-live/images/landing-pages/usps/desktop/usp_wallet@1x.png"
+              src="./Images/Price-Match-Guarantee.png"
               alt="Imge Not Found"
             />
           </div>

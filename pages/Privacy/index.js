@@ -4,7 +4,6 @@ import Modal from '../../components/Modal'
 import Play from '../../components/Play'
 import Language from "../../components/Language"
 import HelpIndex from '../../components/HelpIndex'
-
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 

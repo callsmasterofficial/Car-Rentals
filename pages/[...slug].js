@@ -63,9 +63,4 @@ function index({slug}) {
   )
 }
 
-// export const getServerSideProps = async ({ locale }) => ({
-//   props: {
-//     ...(await serverSideTranslations(locale, ["common"])),
-//   },
-// });
 export default index
