@@ -25,9 +25,10 @@ function Play({modal, setModal }) {
     <div className="flex justify-between mx-auto  ">
       <div className="mobile-pdding">
         <Link href="/">
-        <img className="header-icon cursor-pointer " src="https://cdn.rcstatic.com/images/site_graphics/newsite/mobile/logos/rc-logo-small--white.svg"></img>
+        <img className="header-icon cursor-pointer " src="./Images/LOGO.png"></img>
         </Link>
       </div>
+      {/* "https://cdn.rcstatic.com/images/site_graphics/newsite/mobile/logos/rc-logo-small--white.svg" */}
 
 
 
@@ -45,10 +46,10 @@ function Play({modal, setModal }) {
              src="https://cf.bstatic.com/static/img/flags/new/48-squared/gb.png" ></img>
         </button>
         </div>
-        <div className="Header-Hamburger">
+        {/* <div className="Header-Hamburger">
           
         <button className="bg-gray-100 rounded p-2 m-3 text-blue-500" onClick={()=>router.push("/manage")}>{t("PlayManageBooking")}</button>
-        </div>
+        </div> */}
 
 
       </div>

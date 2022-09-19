@@ -5,7 +5,6 @@ import { useTranslation } from "next-i18next";
 
 function Footer() {
   const { t } = useTranslation("common");
-
   const router = useRouter();
   const [modal, setModal] = useState(false);
 
