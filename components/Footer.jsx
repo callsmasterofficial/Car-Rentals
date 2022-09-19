@@ -52,7 +52,7 @@ function Footer() {
                 {t("FooterHeading5")}
               </li>
             </a>
-            <a>
+            {/* <a>
               <li className="hover:underline mr-3 cursor-pointer	">
                 {t("FooterHeading6")}
               </li>
@@ -66,7 +66,7 @@ function Footer() {
               <li className="hover:underline mr-3 cursor-pointer	">
                 {t("FooterHeading8")}
               </li>
-            </a>
+            </a> */}
             <a>
               <li className="hover:underline mr-3 cursor-pointer	">
                 {t("FooterHeading9")}
@@ -76,29 +76,29 @@ function Footer() {
         </div>
       </div>
       <div className="w-[90%] mx-auto lg:w-[80%] Footer-main">
-        <div className="lg:grid lg:grid-cols-4 lg:footer">
-          <div className="col-span-3  mt-5">
+        <div className=" lg:footer">
+          <div className=" mt-5">
             <p>{t("FooterText1")}</p>
             <p>{t("FooterText2")}</p>
           </div>
-          <div className="col-span-1 ml-28 mt-5 mobile-footer-image object-center	">
+          {/* <div className="col-span-1 ml-28 mt-5 mobile-footer-image object-center	">
             <img
               className="w-24 object-center	"
               src="https://cdn2.rcstatic.com/com.rentalcars.185492029745.eu-west-1.web.prod.static-live/images/landing-pages/world-travel-award-2020/desktop/world-travel-award-2020@2x.png"
             />
-          </div>
+          </div> */}
         </div>
 
-        <div className="flex justify-evenly p-12 footer-company	">
+        {/* <div className="flex justify-evenly p-12 footer-company	">
           <img src="https://r-cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png" />
           <img src="https://q-cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png" />
           <img src="https://r-cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png" />
           <img src="https://q-cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png" />
           <img src="https://r-cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png" />
           <img src="https://r-cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png" />
-        </div>
+        </div> */}
 
-        <div className="text-center">
+        <div className="text-center mt-5">
           <p>{t("FooterText3")}</p>
         </div>
       </div>
